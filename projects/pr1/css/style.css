@@ -14,9 +14,13 @@
   width: 100%;
   height: 75px;
 }
-li,span,.pr-com{
+
+li,
+span,
+.pr-com {
   color: #000000;
 }
+
 div,
 /* span, */
 button,
@@ -147,6 +151,7 @@ p {
 .box-card1 {
   width: 22%;
 }
+
 .box-card1 > h3 {
   font-size: 40px;
   line-height: 58px;
@@ -182,6 +187,7 @@ p {
   font-size: 200%;
   line-height: 46px;
 }
+
 .box-card2 > img,
 .box-card3 > img,
 .box-card4 > img {
@@ -200,6 +206,7 @@ p {
   width: 100%;
   height: 565px;
 }
+
 .r-5 > h1,
 .r-4 > h1 {
   width: 65%;
@@ -207,6 +214,7 @@ p {
   line-height: 92px;
   color: #010851;
 }
+
 .r-5 > h1 > span,
 .r-4 > h1 > span {
   color: #9a7af1;
@@ -236,7 +244,8 @@ p {
 }
 
 .r-5 > button:hover,
-.r-4 > button:hover {
+.r-4 > button:hover,
+.promo-code:hover {
   color: #313bfa;
 }
 
@@ -255,19 +264,23 @@ p {
   width: 100%;
   height: 1200px;
 }
+
 .titl-plans {
   text-align: center;
 }
+
 .titl-plans > h1 {
   font-size: 64px;
   line-height: 92px;
   color: #010851;
 }
+
 .titl-plans > h6 {
   font-size: 16px;
   line-height: 23px;
   color: #707070;
 }
+
 /* ################# cheeck box ############*/
 *:before,
 *:after {
@@ -288,10 +301,12 @@ p {
   position: relative;
   vertical-align: middle;
 }
+
 .toggle-switch:before,
 .toggle-switch:after {
   content: "";
 }
+
 /* ###########  small swich button ######### */
 .toggle-switch:before {
   display: block;
@@ -305,13 +320,16 @@ p {
   left: 5px;
   transition: left 0.25s;
 }
+
 .toggle:hover .toggle-switch:before {
   background: linear-gradient(to bottom, #fff 0%, #fff 100%);
   /* box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5); */
 }
+
 .toggle-checkbox:checked + .toggle-switch {
   background: #9a7af1;
 }
+
 /*  ##############  Move  ########## */
 .toggle-checkbox:checked + .toggle-switch:before {
   left: 45px;
@@ -330,13 +348,15 @@ p {
   color: #010851;
   margin: 90px;
 }
+
 /* ################# End cheeck box ############*/
-.type-plan{
+.type-plan {
   display: flex;
   justify-content: space-around;
-  padding-top:9%;
+  padding-top: 9%;
 }
-.box-pr-type{
+
+.box-pr-type {
   width: 418px;
   height: 746px;
   text-align: center;
@@ -347,74 +367,120 @@ p {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-.pr-type-1{
+
+.pr-type-1 {
   font-weight: 800;
   font-size: 40px;
   line-height: 58px;
   color: #010851;
 }
-.pr-com{
+
+.pr-com {
   font-size: 16px;
   line-height: 23px;
   text-align: center;
 }
-.pr-no{
 
+.pr-no {
   font-weight: 800;
   font-size: 64px;
   line-height: 92px;
-  color: #9A7AF1;
+  color: #9a7af1;
 }
-.pr-no>span{
+
+.pr-no > span {
   font-weight: 400;
   font-size: 18px;
-  line-height: 26px
+  line-height: 26px;
 }
-.list-item{
+
+.list-item {
   width: 95%;
   height: 60%;
 }
-li{
+
+li {
   list-style-type: none;
-  padding:4%;
+  padding: 4%;
   text-align: start;
   font-weight: 500;
   font-size: 20px;
   line-height: 29px;
 }
-.chose-pr-btn{
+
+.chose-pr-btn {
   width: 216px;
   height: 69px;
-  background: #FFFFFF;
-  border: 1px solid #9A7AF1;
+  background: #ffffff;
+  border: 1px solid #9a7af1;
   border-radius: 20px;
-  color: #9A7AF1;
+  color: #9a7af1;
 }
-.chose-pr-btn:hover{
-  background: #9A7AF1;
+
+.chose-pr-btn:hover {
+  background: #9a7af1;
   border-radius: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
-.a-solid,.fa-circle{
+
+.a-solid,
+.fa-circle {
   padding-right: 7%;
 }
 
 /*............. End partition5...........  */
 
-.parent-7{
+/*............. partition6........... */
+
+.parent-7 {
   width: 100%;
   height: 607px;
   background: linear-gradient(170deg, #ee9ae5 10%, #5961f9 70%);
   margin: 10px 10px 5px 10px;
   border-radius: 30px 30px 200px 30px;
-margin-top:10%;
+  margin-top: 10%;
+  display: flex;
 }
 
+.par7-lt > h1 {
+  width: 85%;
+  margin-left: 2.65%;
+  height: 43%;
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 130px;
+  color: #ffffff;
+}
 
+.par7-lt > h6 {
+  width: 65%;
+  height: 12%;
+  margin-left: 2.65%;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 35px;
+  color: #ffffff;
+}
 
+.promo-code {
+  width: 13.3%;
+  height: 9.77%;
+  border: 0px;
+  margin-left: 2.65%;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 29px;
+  color: #ffffff;
+  background: #9a7af1;
+  border-radius: 20px;
+}
 
-
-
-/*............. partition6........... */
+.undraw_feeling_happy {
+  /* background: url(../image/4.png); */
+  background-blend-mode: multiply;
+  mix-blend-mode: multiply;
+  /* transform: rotate(-90deg); */
+  transform: translate(-265px, 0);
+}
 
 /*............. End partition6........... */
