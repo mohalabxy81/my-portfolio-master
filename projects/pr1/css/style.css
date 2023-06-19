@@ -1,0 +1,420 @@
+/* ............. font (jost) ......... */
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@700&display=swap");
+
+/* ...........nav......... */
+
+.body {
+  width: 1623px;
+}
+
+.nav-par {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 75px;
+}
+li,span,.pr-com{
+  color: #000000;
+}
+div,
+/* span, */
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: 20px;
+  /* width: 100px; */
+  font-family: "Jost", sans-serif;
+}
+
+.logo {
+  margin-left: 20px;
+  display: flex;
+  height: 75px;
+  width: 185px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-title {
+  font-size: 2.218%;
+  line-height: 52px;
+  margin-left: 20px;
+}
+
+.nav-title {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 29px;
+}
+
+.nav-4 {
+  flex-basis: 500px;
+}
+
+.nav-1:hover,
+.nav-2:hover,
+.nav-3:hover,
+.nav-4:hover,
+.logo-title:hover,
+.btn-signup:hover {
+  color: #9478fa;
+  cursor: pointer;
+}
+
+.btn-signup {
+  margin-right: 250px;
+  background-color: #cdcdcd;
+  color: #010851;
+  width: 120px;
+  height: 46px;
+  border-radius: 10px;
+  border: 0px;
+}
+
+/* ............end nav.............. */
+/* .............partition 1.......... */
+
+.parent-2 {
+  background: linear-gradient(170deg, #ee9ae5 10%, #5961f9 70%);
+  width: 100%;
+  height: 612px;
+  margin: 10px 10px 5px 10px;
+  border-radius: 30px 30px 200px 30px;
+  flex-direction: column;
+}
+
+.parent-2 > div {
+  width: 1171px;
+  height: 150px;
+  color: white;
+  font-weight: bold;
+  margin-left: 40px;
+  font-weight: 700;
+  font-size: 128px;
+  line-height: 185px;
+}
+
+.parent-2 > p {
+  margin-left: 40px;
+  color: white;
+  width: 885px;
+  height: 58px;
+  font-family: "Jost";
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 35px;
+}
+
+.btn-gr-1 > button {
+  flex-direction: row;
+  width: 225px;
+  height: 70px;
+  background-color: #9a7af1;
+  color: white;
+  font-family: "Jost";
+  font-weight: bold;
+  border: 0px;
+  font-size: 24px;
+  line-height: 35px;
+  border-radius: 30px;
+}
+
+.btn-gr-1 > button:hover {
+  color: #313bfa;
+}
+
+/*............. end partition1............ */
+/*............. partition2............ */
+.parent-3 {
+  margin-left: 10px;
+  width: 100%;
+  height: 710px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.box-card1 {
+  width: 22%;
+}
+.box-card1 > h3 {
+  font-size: 40px;
+  line-height: 58px;
+  color: #010851;
+}
+
+.box-card1 > h6 {
+  font-size: 16px;
+  line-height: 23px;
+  color: #707070;
+}
+
+.boxs {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+.box-card2,
+.box-card3,
+.box-card4 {
+  width: 300px;
+  height: 400px;
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.15);
+  border-radius: 35px;
+}
+
+.box-card2 > h3,
+.box-card3 > h3,
+.box-card4 > h3 {
+  margin-left: 10%;
+  font-size: 200%;
+  line-height: 46px;
+}
+.box-card2 > img,
+.box-card3 > img,
+.box-card4 > img {
+  margin-left: 10%;
+}
+
+.box-card3 {
+  margin-top: 87px;
+}
+
+/*............. End partition2........... */
+/*............. partition3.4.......... */
+
+.parent-4 {
+  display: flex;
+  width: 100%;
+  height: 565px;
+}
+.r-5 > h1,
+.r-4 > h1 {
+  width: 65%;
+  font-size: 64px;
+  line-height: 92px;
+  color: #010851;
+}
+.r-5 > h1 > span,
+.r-4 > h1 > span {
+  color: #9a7af1;
+}
+
+.r-5 > h5,
+.r-4 > h5 {
+  width: 65%;
+  font-size: 24px;
+  line-height: 35px;
+  color: #707070;
+}
+
+.r-5 > button,
+.r-4 > button {
+  flex-direction: row;
+  width: 225px;
+  height: 70px;
+  background-color: #9a7af1;
+  color: white;
+  font-family: "Jost";
+  font-weight: bold;
+  border: 0px;
+  font-size: 24px;
+  line-height: 35px;
+  border-radius: 30px;
+}
+
+.r-5 > button:hover,
+.r-4 > button:hover {
+  color: #313bfa;
+}
+
+/*............. End partition3.4.......... */
+/*............. partition4........... */
+.parent-5 {
+  display: flex;
+  /* justify-content: space-around; */
+  width: 100%;
+  height: 634px;
+}
+
+/*............. End partition4........... */
+/*............. partition5........... */
+.parent-6 {
+  width: 100%;
+  height: 1200px;
+}
+.titl-plans {
+  text-align: center;
+}
+.titl-plans > h1 {
+  font-size: 64px;
+  line-height: 92px;
+  color: #010851;
+}
+.titl-plans > h6 {
+  font-size: 16px;
+  line-height: 23px;
+  color: #707070;
+}
+/* ################# cheeck box ############*/
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.toggle {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.toggle-switch {
+  display: inline-block;
+  background: #9a7af1;
+  border-radius: 50px;
+  width: 100px;
+  height: 50px;
+  position: relative;
+  vertical-align: middle;
+}
+.toggle-switch:before,
+.toggle-switch:after {
+  content: "";
+}
+/* ###########  small swich button ######### */
+.toggle-switch:before {
+  display: block;
+  background: #d9d9d9;
+  border-radius: 50px;
+  /* box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25); */
+  width: 50px;
+  height: 40px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  transition: left 0.25s;
+}
+.toggle:hover .toggle-switch:before {
+  background: linear-gradient(to bottom, #fff 0%, #fff 100%);
+  /* box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5); */
+}
+.toggle-checkbox:checked + .toggle-switch {
+  background: #9a7af1;
+}
+/*  ##############  Move  ########## */
+.toggle-checkbox:checked + .toggle-switch:before {
+  left: 45px;
+}
+
+.toggle-checkbox {
+  position: absolute;
+  visibility: hidden;
+}
+
+.toggle-label {
+  margin-left: 5px;
+  position: relative;
+  font-size: 40px;
+  line-height: 58px;
+  color: #010851;
+  margin: 90px;
+}
+/* ################# End cheeck box ############*/
+.type-plan{
+  display: flex;
+  justify-content: space-around;
+  padding-top:9%;
+}
+.box-pr-type{
+  width: 418px;
+  height: 746px;
+  text-align: center;
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.15);
+  border-radius: 35px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.pr-type-1{
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 58px;
+  color: #010851;
+}
+.pr-com{
+  font-size: 16px;
+  line-height: 23px;
+  text-align: center;
+}
+.pr-no{
+
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 92px;
+  color: #9A7AF1;
+}
+.pr-no>span{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px
+}
+.list-item{
+  width: 95%;
+  height: 60%;
+}
+li{
+  list-style-type: none;
+  padding:4%;
+  text-align: start;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+}
+.chose-pr-btn{
+  width: 216px;
+  height: 69px;
+  background: #FFFFFF;
+  border: 1px solid #9A7AF1;
+  border-radius: 20px;
+  color: #9A7AF1;
+}
+.chose-pr-btn:hover{
+  background: #9A7AF1;
+  border-radius: 20px;
+  color: #FFFFFF;
+}
+.a-solid,.fa-circle{
+  padding-right: 7%;
+}
+
+/*............. End partition5...........  */
+
+.parent-7{
+  width: 100%;
+  height: 607px;
+  background: linear-gradient(170deg, #ee9ae5 10%, #5961f9 70%);
+  margin: 10px 10px 5px 10px;
+  border-radius: 30px 30px 200px 30px;
+margin-top:10%;
+}
+
+
+
+
+
+
+/*............. partition6........... */
+
+/*............. End partition6........... */
