@@ -1,34 +1,45 @@
 @import "./classes";
 @import "./variables";
+
 //! ------------------- Start portfolio Style -------------------
-#portfolio
-{
-    // background-color: royalblue;
-    .works
-    {
-        // background-color: tomato;
+#portfolio {
+    .works {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        .work
-        {
+        gap: 2px;
+        
+        .work {
             position: relative;
             width: 33.333%;
             height: 350px;
             background-size: cover;
-            transition: ease-in-out 5s background-position;
-            background-size: cover;
-            transition-delay: 0.3s;
-            a
-            {
+            background-position: center;
+            transition: transform 0.3s ease, filter 0.3s ease;
+            overflow: hidden;
+            
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: linear-gradient(135deg, rgba($color: black, $alpha: 0.7), rgba($color: black, $alpha: 0.4));
+                z-index: 1;
+                transition: 0.3s ease;
+            }
+            
+            a {
                 display: block;
                 width: 100%;
                 height: 100%;
+                z-index: 0;
             }
-            .work-layout
-            {
-                background-color: rgba($color: black, $alpha: 0.85);
+            
+            .work-layout {
+                background-color: transparent;
                 position: absolute;
                 top: 0;
                 bottom: 0;
@@ -38,139 +49,257 @@
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
-                transition: 0.5s;
-                transition-delay: 0.2s;
+                transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
                 overflow: hidden;
-                span
-                {
-                    color: white;
-                    transition: 0.7s;
-                    margin-bottom: 5px;
+                z-index: 2;
+                
+                span {
+                    color: #999;
+                    transition: all 0.6s ease;
+                    margin-bottom: 10px;
                     position: relative;
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
                 }
-                h4
-                {
+                
+                h4 {
                     color: $mainColor;
-                    transition: 0.7s;
+                    transition: all 0.6s ease;
                     position: relative;
+                    font-weight: 700;
+                    font-size: 28px;
+                    margin: 0;
+                }
+                
+                .work-tech {
+                    color: #ccc;
+                    font-size: 12px;
+                    margin-top: 10px;
+                    opacity: 0;
+                    transform: translateY(10px);
+                    transition: all 0.6s ease 0.1s;
                 }
             }
-            &:hover
-            {
-                background-position: bottom;
-                .work-layout
-                {
-                    opacity: 0;
-                    visibility: hidden;
-                    span
-                    {
-                        transform: translateX(150px);
+            
+            &:hover {
+                transform: translateY(-8px);
+                filter: brightness(1.1);
+                
+                &::before {
+                    background: linear-gradient(135deg, rgba($color: black, $alpha: 0.4), rgba($color: black, $alpha: 0.2));
+                }
+                
+                .work-layout {
+                    span {
+                        transform: translateY(-20px);
+                        color: white;
                     }
-                    h4
-                    {
-                        transform: translateX(-150px);
-                        
+                    
+                    h4 {
+                        transform: translateY(0);
+                        color: $mainColor;
+                        text-shadow: 0 0 20px rgba($color: $mainColor, $alpha: 0.5);
+                    }
+                    
+                    .work-tech {
+                        opacity: 1;
+                        transform: translateY(20px);
                     }
                 }
             }
         }
-        .work.work1
-        {
+        
+        .work.work1 {
             background-image: url("../assets/images/1.webp");
         }
-        .work.work2
-        {
+        
+        .work.work2 {
             background-image: url("../assets/images/2.webp");
         }
-        .work.work3
-        {
+        
+        .work.work3 {
             background-image: url("../assets/images/3.webp");
         }
-        .work.work4
-        {
+        
+        .work.work4 {
             background-image: url("../assets/images/4.webp");
         }
-        .work.work5
-        {
+        
+        .work.work5 {
             background-image: url("../assets/images/5.webp");
         }
-        .work.work6
-        {
+        
+        .work.work6 {
             background-image: url("../assets/images/6.webp");
         }
-
     }
-    .resume
-    {
-        .resume-info
-        {
-            padding: 10px 0;
-            .res
-            {
-                margin-bottom: 18px;
-                h5
-                {
+    
+    .resume {
+        .resume-info {
+            padding: 40px 0;
+            
+            .res {
+                margin-bottom: 30px;
+                
+                h5 {
                     text-transform: uppercase;
                     color: white;
                     text-align: center;
-                    margin-bottom: 20px;
-                    i
-                    {
+                    margin-bottom: 25px;
+                    font-size: 20px;
+                    font-weight: 700;
+                    letter-spacing: 2px;
+                    position: relative;
+                    padding-bottom: 15px;
+                    
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        width: 60px;
+                        height: 2px;
+                        background: $mainColor;
+                    }
+                    
+                    i {
                         color: $mainColor;
-                        margin-right: 5px;
+                        margin-right: 10px;
                     }
                 }
-                .res-item
-                {
-                    background-color: $secBg;
-                    padding: 20px;
-                    border-radius: 5px;
-                    margin-bottom: 18px;
+                
+                .res-item {
+                    background: linear-gradient(135deg, rgba($mainColor, 0.1), rgba($mainColor, 0.05));
+                    padding: 25px;
+                    border-radius: 8px;
+                    margin-bottom: 20px;
                     color: white;
-                    span
-                    {
-                        font: {
-                            size: 15px;
-                            weight: 600;
-                        };
-                        margin-bottom: 5px;
+                    border-left: 4px solid $mainColor;
+                    transition: all 0.3s ease;
+                    
+                    &:hover {
+                        transform: translateX(8px);
+                        box-shadow: 0 5px 20px rgba($color: $mainColor, $alpha: 0.15);
                     }
-                    h4
-                    {
-                        color: $mainColor;
+                    
+                    span {
+                        font-size: 13px;
                         font-weight: 600;
+                        margin-bottom: 8px;
+                        color: $mainColor;
+                        display: block;
+                        text-transform: uppercase;
+                        letter-spacing: 1px;
+                    }
+                    
+                    h4 {
+                        color: white;
+                        font-weight: 700;
+                        margin: 10px 0 8px 0;
+                        font-size: 18px;
+                    }
+                    
+                    p {
+                        color: #aaa;
+                        font-size: 14px;
+                        margin: 0;
+                        line-height: 1.6;
                     }
                 }
             }
         }
     }
 }
+
 //! ------------------- End portfolio Style -------------------
+
 //? ------------------- Start portfolio Responsive -------------------
 @media screen and (max-width: 991px) {
-
-    #portfolio
-    {
-        .works
-        {
-            .work
-            {
+    #portfolio {
+        .works {
+            .work {
                 width: 50%;
+                height: 300px;
+                
+                .work-layout {
+                    h4 {
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+        
+        .resume {
+            .resume-info {
+                .res {
+                    h5 {
+                        font-size: 18px;
+                    }
+                    
+                    .res-item {
+                        h4 {
+                            font-size: 16px;
+                        }
+                    }
+                }
             }
         }
     }
 }
-@media screen and (max-width: 767px) {
 
-    #portfolio
-    {
-        .works
-        {
-            .work
-            {
+@media screen and (max-width: 767px) {
+    #portfolio {
+        .works {
+            gap: 0;
+            
+            .work {
                 width: 100%;
+                height: 250px;
+                
+                .work-layout {
+                    h4 {
+                        font-size: 20px;
+                    }
+                    
+                    span {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+        
+        .resume {
+            .resume-info {
+                flex-direction: column;
+                
+                .res {
+                    margin-bottom: 25px;
+                }
             }
         }
     }
 }
+
+@media screen and (max-width: 575px) {
+    #portfolio {
+        .works {
+            .work {
+                height: 200px;
+                
+                .work-layout {
+                    h4 {
+                        font-size: 18px;
+                    }
+                    
+                    .work-tech {
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 //? ------------------- End portfolio Responsive -------------------
