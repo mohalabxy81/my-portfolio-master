@@ -1,105 +1,151 @@
-@import "./classes";
 @import "./variables";
-//! ------------------- Start Contact Style -------------------
-#contact
-{
-    .contact
-    {
-        margin-bottom: 20px;
-        h4
-        {
-            font-weight: 600;
-            color: white;
-            margin-bottom: 24px;
-            span
-            {
-                -webkit-text-stroke-color:$mainColor;
-                -webkit-text-stroke-width: 1px;
-                font-weight: 700;
-                letter-spacing: 1px;
-                color: transparent;
-                transition: 0.2s;
-                &:hover
-                {
+
+#contact {
+    .contact {
+        &.contact-info {
+            h4 {
+                color: white;
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 1.6;
+                margin-bottom: 30px;
+                
+                span {
                     color: $mainColor;
                 }
-                &::selection{
-                    background-color: transparent;
-                }
             }
-        }
-    }
-    .contact-info
-    {
-        padding: 5px 0;
-        a
-        {
-            color: white;
-            margin-bottom: 20px;
-            font-size: 17px;
-            display: block;
-            text-decoration: none;
-            transition: 0.2s;
-            i
-            {
-                color: $mainColor;
-                margin-right: 12px;
-                font-size: 20px;
-            }
-            &:hover
-            {
-                color: $mainColor;
-            }
-        }
-    }
-    .contact-media
-    {
-        .media-accounts
-        {
-            padding: 10px 0;
-            width: fit-content;
-            max-width: 100%;
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            flex-wrap: wrap;
-            .media
-            {
-                width: 65px;
-                height: 65px;
-                margin-right: 20px;
-                margin-bottom: 20px;
-                border-radius: 50%;
-                border: 2px solid $mainColor;
-                transition: 0.5s;
-                text-decoration: none;
+            
+            a {
                 display: flex;
-                justify-content: center;
                 align-items: center;
-                position: relative;
-                i
-                {
+                gap: 15px;
+                color: #ddd;
+                text-decoration: none;
+                margin-bottom: 20px;
+                padding: 15px;
+                border-radius: 8px;
+                transition: all $transitionBase;
+                
+                &:hover {
                     color: $mainColor;
-                    font-size: 28px;
+                    background: rgba($color: $mainColor, $alpha: 0.1);
+                    transform: translateX(10px);
+                    
+                    i {
+                        transform: scale(1.2);
+                    }
                 }
-                span
-                {
-                    position: absolute;
-                    bottom: 110%;
+                
+                i {
                     color: $mainColor;
-                    display: block;
-                    visibility: hidden;
+                    font-size: 20px;
+                    transition: transform $transitionBase;
+                    min-width: 25px;
+                    text-align: center;
                 }
-                &:hover
-                {
-                    background-color: white;
-                    span
-                    {
-                        visibility: visible;
+            }
+        }
+        
+        &.contact-media {
+            h4 {
+                color: white;
+                font-size: 24px;
+                font-weight: 600;
+                margin-bottom: 30px;
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                
+                .line {
+                    display: none;
+                }
+            }
+            
+            .media-accounts {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+                
+                .media {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 10px;
+                    padding: 20px;
+                    background: linear-gradient(135deg, rgba($mainColor, 0.1), rgba($mainColor, 0.05));
+                    border-radius: 8px;
+                    text-decoration: none;
+                    color: white;
+                    transition: all $transitionBase;
+                    border: 1px solid rgba($color: $mainColor, $alpha: 0.2);
+                    
+                    &:hover {
+                        background: linear-gradient(135deg, rgba($mainColor, 0.2), rgba($mainColor, 0.1));
+                        transform: translateY(-5px);
+                        border-color: $mainColor;
+                        box-shadow: 0 10px 30px rgba($color: $mainColor, $alpha: 0.2);
+                        
+                        i {
+                            color: $mainColor;
+                            transform: scale(1.2) rotate(5deg);
+                        }
+                    }
+                    
+                    i {
+                        font-size: 28px;
+                        color: $mainColor;
+                        transition: all $transitionBase;
+                    }
+                    
+                    span {
+                        font-size: 14px;
+                        font-weight: 500;
+                        text-align: center;
                     }
                 }
             }
         }
     }
 }
-//! ------------------- End Contact Style -------------------
+
+@media screen and (max-width: 767px) {
+    #contact {
+        .contact {
+            margin-bottom: 30px;
+            
+            h4 {
+                font-size: 20px !important;
+            }
+        }
+        
+        .contact-media {
+            .media-accounts {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 10px;
+                
+                .media {
+                    padding: 15px;
+                    
+                    i {
+                        font-size: 22px;
+                    }
+                    
+                    span {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #contact {
+        .contact-media {
+            .media-accounts {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+}
