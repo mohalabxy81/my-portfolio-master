@@ -1,67 +1,110 @@
 //! loading screen script
-window.onload = () => {
-    let loadingScreen = $("#loading")
-    loadingScreen.fadeOut("250")
-    $("body").css("overflow", "auto")
-}
-//! NavBar Script
-let navToggleBtn = document.querySelector(".navbar-toggler");
-let navLinks = document.querySelectorAll(".nav-link")
-
-navToggleBtn.onclick = () => {
-    let navToggleIcon = document.getElementById("navToggleIcon");
-    if (navToggleIcon.classList.contains("fa-bars")) {
-        navToggleIcon.classList.replace("fa-bars", "fa-times")
-    } else {
-        navToggleIcon.classList.replace("fa-times", "fa-bars")
-    }
-}
-window.onscroll = () => {
-    let scrollPosition = window.scrollY
-    let aboutSection = document.getElementById("about")
-    //! nav part
-    let nav = document.querySelector("nav")
-    if (scrollPosition > 150) {
-        nav.classList.add("navbar-sticky")
-    } else {
-        nav.classList.remove("navbar-sticky")
-    }
-
-    //! load div part
-    if (scrollPosition > aboutSection.offsetTop) {
-        document.querySelector(".percentage.HTML").style.width = "90%"
-        document.querySelector(".percentage.CSS").style.width = "85%"
-        document.querySelector(".percentage.SCSS").style.width = "75%"
-        document.querySelector(".percentage.BS").style.width = "95%"
-        document.querySelector(".percentage.JS").style.width = "70%"
-        document.querySelector(".percentage.NG").style.width = "65%"
-    }
-}
-
-for (let i = 0; i < navLinks.length; i++) {
-    navLinks[i].onclick = (e) => {
-        for (let i = 0; i < navLinks.length; i++) { navLinks[i].classList.remove("active") }
-        e.target.classList.add("active")
-    }
-}
-
-
-
-//! Typed Js Script
-var typed = new Typed('#typed', {
-    strings: ["Full Stack Developer.^1000", "Freelancer.^1000"],
-    typeSpeed: 80,
-    loop: true,
+window.addEventListener('load', () => {
+    const loadingScreen = $("#loading");
+    loadingScreen.fadeOut("250", () => {
+        $("body").css("overflow", "auto");
+    });
 });
 
-//! slick slider fire function
+//! NavBar Script
+const navToggleBtn = document.querySelector(".navbar-toggler");
+const navLinks = document.querySelectorAll(".nav-link");
+const navbar = document.querySelector("nav");
+
+navToggleBtn?.addEventListener('click', () => {
+    const navToggleIcon = document.getElementById("navToggleIcon");
+    if (navToggleIcon.classList.contains("fa-bars")) {
+        navToggleIcon.classList.replace("fa-bars", "fa-times");
+    } else {
+        navToggleIcon.classList.replace("fa-times", "fa-bars");
+    }
+});
+
+// Close menu when link is clicked
+navLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+        navLinks.forEach(l => l.classList.remove("active"));
+        e.target.classList.add("active");
+        
+        // Close mobile menu
+        const collapseBtn = document.querySelector('.navbar-collapse');
+        if (collapseBtn.classList.contains('show')) {
+            navToggleBtn.click();
+        }
+    });
+});
+
+//! Scroll Events
+let scrollTimer;
+window.addEventListener('scroll', () => {
+    clearTimeout(scrollTimer);
+    
+    const scrollPosition = window.scrollY;
+    const aboutSection = document.getElementById("about");
+    
+    // Sticky navbar
+    if (scrollPosition > 150) {
+        navbar.classList.add("navbar-sticky");
+    } else {
+        navbar.classList.remove("navbar-sticky");
+    }
+    
+    // Skills animation
+    scrollTimer = setTimeout(() => {
+        if (scrollPosition > aboutSection?.offsetTop - 300) {
+            animateSkills();
+        }
+    }, 50);
+});
+
+// Animate skills once
+let skillsAnimated = false;
+function animateSkills() {
+    if (skillsAnimated) return;
+    
+    const skills = {
+        'HTML': 90,
+        'CSS': 85,
+        'SCSS': 80,
+        'BS': 95,
+        'JS': 75,
+        'NG': 70
+    };
+    
+    Object.entries(skills).forEach(([skill, percentage]) => {
+        const element = document.querySelector(`.percentage.${skill}`);
+        if (element) {
+            element.style.width = `${percentage}%`;
+        }
+    });
+    
+    skillsAnimated = true;
+}
+
+//! Typed.js Script
+const typed = new Typed('#typed', {
+    strings: [
+        "Full Stack Developer",
+        "Civil Engineer",
+        "Web Developer",
+        "Creative Problem Solver"
+    ],
+    typeSpeed: 60,
+    backSpeed: 40,
+    backDelay: 1500,
+    loop: true,
+    showCursor: true,
+    cursorChar: '|'
+});
+
+//! Slick slider initialization
 $('.slider').slick({
     dots: true,
     infinite: true,
     arrows: false,
     speed: 300,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3000,
     slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [
@@ -69,7 +112,7 @@ $('.slider').slick({
             breakpoint: 1400,
             settings: {
                 slidesToShow: 2,
-                slidesToScroll: 2,
+                slidesToScroll: 1,
                 infinite: true,
                 dots: true
             }
@@ -88,13 +131,18 @@ $('.slider').slick({
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
+                centerMode: false
             }
         }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
     ]
-
 });
 
-
+//! Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        if (href !== '#' && document.querySelector(href)) {
+            e.preventDefault();
+        }
+    });
+});
