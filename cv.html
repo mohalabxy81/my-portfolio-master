@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae - Eng. Mohamed Adel Nabih</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <style>
+        @page {
+            size: A4;
+            margin: 0;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f1f5f9;
+            color: #1e293b;
+            line-height: 1.45;
+            -webkit-print-color-adjust: exact !important;
+            print-color-adjust: exact !important;
+        }
+
+        .cv-page {
+            width: 210mm;
+            height: 297mm;
+            max-height: 297mm;
+            margin: 0 auto;
+            background: #ffffff;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            position: relative;
+            overflow: hidden;
+        }
+
+        @media print {
+            html, body {
+                width: 210mm;
+                height: 297mm;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+            .cv-page {
+                box-shadow: none;
+                margin: 0;
+                width: 210mm;
+                height: 297mm;
+                max-height: 297mm;
+                overflow: hidden;
+            }
+        }
+
+        /* Header */
+        .cv-header {
+            background: #0f172a;
+            color: #ffffff;
+            padding: 16px 26px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 3.5px solid #0284c7;
+        }
+
+        .header-content {
+            flex: 1;
+        }
+
+        .header-title-wrap h1 {
+            font-size: 24px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            color: #ffffff;
+            line-height: 1.15;
+        }
+
+        .header-title-wrap h1 span {
+            color: #38bdf8;
+        }
+
+        .header-subtitle {
+            font-size: 13px;
+            font-weight: 600;
+            color: #94a3b8;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            margin-top: 2px;
+            margin-bottom: 8px;
+        }
+
+        .header-contact-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 4px 16px;
+            font-size: 11px;
+            color: #cbd5e1;
+        }
+
+        .header-contact-grid a {
+            color: #cbd5e1;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .header-contact-grid a:hover {
+            color: #38bdf8;
+        }
+
+        .header-contact-grid i {
+            color: #38bdf8;
+            font-size: 12px;
+            width: 14px;
+            text-align: center;
+        }
+
+        .header-photo {
+            margin-left: 20px;
+            flex-shrink: 0;
+        }
+
+        .header-photo img {
+            width: 86px;
+            height: 86px;
+            border-radius: 50%;
+            border: 2.5px solid #38bdf8;
+            object-fit: cover;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+
+        /* Main Body Layout: 2 Columns */
+        .cv-body {
+            display: flex;
+            flex: 1;
+        }
+
+        /* Left Main Column (66%) */
+        .col-main {
+            flex: 1;
+            padding: 14px 20px 12px 26px;
+            border-right: 1px solid #e2e8f0;
+        }
+
+        /* Right Sidebar Column (34%) */
+        .col-sidebar {
+            width: 68mm;
+            background: #f8fafc;
+            padding: 14px 18px 12px 18px;
+        }
+
+        /* Section Styling */
+        .section-block {
+            margin-bottom: 12px;
+        }
+
+        .section-title {
+            font-size: 12px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            color: #0f172a;
+            border-bottom: 2px solid #0284c7;
+            padding-bottom: 3px;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 7px;
+        }
+
+        .section-title i {
+            color: #0284c7;
+            font-size: 12px;
+        }
+
+        /* Summary */
+        .summary-text {
+            font-size: 10.5px;
+            line-height: 1.45;
+            color: #334155;
+            text-align: justify;
+        }
+
+        /* Experience Item */
+        .exp-item {
+            margin-bottom: 9px;
+            position: relative;
+        }
+
+        .exp-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .exp-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 1px;
+        }
+
+        .exp-role {
+            font-size: 12px;
+            font-weight: 700;
+            color: #0f172a;
+        }
+
+        .exp-date {
+            font-size: 10px;
+            font-weight: 600;
+            color: #0284c7;
+            background: #e0f2fe;
+            padding: 1px 7px;
+            border-radius: 8px;
+            white-space: nowrap;
+        }
+
+        .exp-company {
+            font-size: 11px;
+            font-weight: 600;
+            color: #475569;
+            margin-bottom: 3px;
+        }
+
+        .exp-company span {
+            color: #64748b;
+            font-weight: 400;
+            font-size: 10px;
+        }
+
+        .exp-bullets {
+            list-style: none;
+            padding-left: 0;
+            font-size: 10px;
+            color: #334155;
+            line-height: 1.4;
+        }
+
+        .exp-bullets li {
+            position: relative;
+            padding-left: 12px;
+            margin-bottom: 2px;
+        }
+
+        .exp-bullets li::before {
+            content: '▪';
+            position: absolute;
+            left: 1px;
+            color: #0284c7;
+            font-size: 11px;
+        }
+
+        /* Key Projects Highlights in Main */
+        .project-tag-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 6px;
+        }
+
+        .project-tag-item {
+            background: #f1f5f9;
+            border: 1px solid #e2e8f0;
+            border-radius: 5px;
+            padding: 5px 8px;
+            font-size: 9.5px;
+        }
+
+        .project-tag-item strong {
+            display: block;
+            font-size: 10px;
+            color: #0f172a;
+        }
+
+        .project-tag-item span {
+            color: #64748b;
+            font-size: 9px;
+        }
+
+        /* Sidebar Styling */
+        .sidebar-item {
+            margin-bottom: 12px;
+        }
+
+        .edu-box {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 5px;
+            padding: 7px 8px;
+            margin-bottom: 6px;
+        }
+
+        .edu-box h4 {
+            font-size: 11px;
+            font-weight: 700;
+            color: #0f172a;
+        }
+
+        .edu-box .edu-inst {
+            font-size: 10px;
+            color: #475569;
+            margin-bottom: 1px;
+        }
+
+        .edu-box .edu-grade {
+            font-size: 9.5px;
+            font-weight: 600;
+            color: #0284c7;
+        }
+
+        .skill-group {
+            margin-bottom: 8px;
+        }
+
+        .skill-group-title {
+            font-size: 9.5px;
+            font-weight: 700;
+            color: #475569;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+        }
+
+        .skill-badge {
+            background: #ffffff;
+            border: 1px solid #cbd5e1;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 9.5px;
+            font-weight: 600;
+            color: #1e293b;
+        }
+
+        .skill-badge.highlight {
+            background: #0f172a;
+            color: #ffffff;
+            border-color: #0f172a;
+        }
+
+        .cert-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .cert-list li {
+            font-size: 10px;
+            margin-bottom: 5px;
+            padding-bottom: 4px;
+            border-bottom: 1px dashed #e2e8f0;
+        }
+
+        .cert-list li:last-child {
+            border-bottom: none;
+        }
+
+        .cert-list strong {
+            display: block;
+            color: #0f172a;
+            font-size: 10.5px;
+        }
+
+        .cert-list span {
+            color: #64748b;
+            font-size: 9.5px;
+        }
+
+        .lang-item {
+            display: flex;
+            justify-content: space-between;
+            font-size: 10px;
+            padding: 2px 0;
+            border-bottom: 1px solid #f1f5f9;
+        }
+
+        .lang-item span:first-child {
+            font-weight: 600;
+            color: #1e293b;
+        }
+
+        .lang-item span:last-child {
+            color: #64748b;
+        }
+
+        /* Footer Stamp */
+        .cv-footer {
+            background: #f8fafc;
+            border-top: 1px solid #e2e8f0;
+            padding: 6px 26px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 9px;
+            color: #94a3b8;
+        }
+
+        /* Floating Action Bar */
+        .cv-action-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 52px;
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(56, 189, 248, 0.25);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+            padding: 0 20px;
+        }
+
+        .action-bar-container {
+            width: 100%;
+            max-width: 210mm;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .action-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            padding: 7px 14px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border: none;
+            font-family: inherit;
+        }
+
+        .btn-back {
+            background: rgba(255, 255, 255, 0.1);
+            color: #e2e8f0;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        .btn-back:hover {
+            background: rgba(255, 255, 255, 0.2);
+            color: #ffffff;
+        }
+
+        .action-group {
+            display: flex;
+            gap: 8px;
+        }
+
+        .btn-primary {
+            background: #0284c7;
+            color: #ffffff;
+            box-shadow: 0 2px 8px rgba(2, 132, 199, 0.35);
+        }
+
+        .btn-primary:hover {
+            background: #0369a1;
+            transform: translateY(-1px);
+        }
+
+        .btn-secondary {
+            background: #1e293b;
+            color: #38bdf8;
+            border: 1px solid #0284c7;
+        }
+
+        .btn-secondary:hover {
+            background: #0284c7;
+            color: #ffffff;
+        }
+
+        /* Generation Toast */
+        .gen-toast {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            background: #0f172a;
+            color: #ffffff;
+            border-left: 4px solid #38bdf8;
+            padding: 12px 20px;
+            border-radius: 6px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 10000;
+        }
+
+        .gen-toast.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(-4px);
+        }
+
+        @media print {
+            .no-print, .cv-action-bar, .gen-toast {
+                display: none !important;
+            }
+            body {
+                padding-top: 0 !important;
+                padding-bottom: 0 !important;
+            }
+        }
+
+        @media screen {
+            body {
+                padding-top: 66px;
+                padding-bottom: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Floating Action Bar for Live PDF Generation & Print (Hidden in Print) -->
+    <div class="cv-action-bar no-print">
+        <div class="action-bar-container">
+            <a href="index.html" class="action-btn btn-back">
+                <i class="fas fa-arrow-left"></i> <span>Back to Portfolio</span>
+            </a>
+            <div class="action-group">
+                <button id="btnDownloadPDF" class="action-btn btn-primary" onclick="generateAndDownloadPDF()" aria-label="Download dynamically generated PDF">
+                    <i class="fas fa-file-download"></i> <span>Download Live PDF</span>
+                </button>
+                <button id="btnPrintPDF" class="action-btn btn-secondary" onclick="window.print()" aria-label="Print or save as vector PDF">
+                    <i class="fas fa-print"></i> <span>Print / Vector PDF</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification Toast -->
+    <div id="genToast" class="gen-toast no-print" role="status" aria-live="polite">
+        <i class="fas fa-info-circle text-info"></i>
+        <span id="genToastMsg">Generating fresh PDF from CV code...</span>
+    </div>
+
+    <div class="cv-page">
+        <!-- Header -->
+        <header class="cv-header">
+            <div class="header-content">
+                <div class="header-title-wrap">
+                    <h1>Eng. Mohamed <span>Adel Nabih</span></h1>
+                    <p class="header-subtitle">Civil Site Execution & Supervision Engineer</p>
+                </div>
+                <div class="header-contact-grid">
+                    <a href="tel:+201558556588"><i class="fas fa-phone-alt"></i> +20 155 855 6588</a>
+                    <a href="mailto:mohalab_xy81@yahoo.com"><i class="fas fa-envelope"></i> mohalab_xy81@yahoo.com</a>
+                    <a href="https://wa.me/201558556588" target="_blank"><i class="fab fa-whatsapp"></i> +20 155 855 6588</a>
+                    <a href="https://www.linkedin.com/in/mohalabxy81/" target="_blank"><i class="fab fa-linkedin"></i> linkedin.com/in/mohalabxy81</a>
+                    <span><i class="fas fa-map-marker-alt"></i> Minyat Al Nasr, Dakahlia, Egypt</span>
+                    <span><i class="fas fa-id-badge"></i> Egyptian Syndicate of Engineers</span>
+                </div>
+            </div>
+            <div class="header-photo">
+                <img src="./assets/images/about-photo.webp" alt="Eng. Mohamed Adel Nabih">
+            </div>
+        </header>
+
+        <!-- Body -->
+        <div class="cv-body">
+            <!-- Left Column: Work Experience & Major Projects -->
+            <main class="col-main">
+                <!-- Professional Summary -->
+                <section class="section-block">
+                    <h2 class="section-title"><i class="fas fa-user-check"></i> Professional Summary</h2>
+                    <p class="summary-text">
+                        Dedicated Civil Engineer with over <strong>5 years of field execution and technical site supervision</strong> experience across industrial facilities, major national infrastructure, and residential developments in Egypt. Proven track record directing turnkey factory construction (foundations, structural framing, helicopter concrete flooring) with <strong>ArteVo Co.</strong>, monumental road networks with the <strong>Armed Forces Engineering Authority</strong>, and turnkey residential finishing with <strong>West Somid Development</strong>. Highly proficient in structural inspection, workforce coordination, subcontractor management, and Egyptian Building Code compliance.
+                    </p>
+                </section>
+
+                <!-- Professional Experience -->
+                <section class="section-block">
+                    <h2 class="section-title"><i class="fas fa-briefcase"></i> Work Experience</h2>
+
+                    <!-- Role 1 -->
+                    <article class="exp-item">
+                        <div class="exp-header">
+                            <h3 class="exp-role">Site Execution & Structural Engineer</h3>
+                            <span class="exp-date">Oct 2022 – Present</span>
+                        </div>
+                        <div class="exp-company">ArteVo Co. <span>| Kom Oshim Industrial Zone, Fayoum & Cairo</span></div>
+                        <ul class="exp-bullets">
+                            <li><strong>Kom Oshim Industrial Factories:</strong> Directing turnkey construction of industrial manufacturing facilities—including deep/shallow reinforced concrete foundations, heavy structural framing, and pre-engineered steel warehouse structures.</li>
+                            <li><strong>Industrial Concrete Flooring:</strong> Executing high-tolerance, heavy-duty power-troweled (helicopter) concrete floors with quartz surface hardeners and elastomeric joint sealants for industrial heavy loads.</li>
+                            <li><strong>Structural & Quality Compliance:</strong> Inspecting rebar spacing, lap lengths, formwork verticality, slump testing, and compressive cube testing per the Egyptian Code for Concrete Structures (ECP 203).</li>
+                            <li><strong>Turnkey Fit-Outs & MEP:</strong> Managing industrial MEP routing, heavy machinery footings, stormwater drainage, accurate quantity surveying (حصر الكميات), and architectural handovers.</li>
+                        </ul>
+                    </article>
+
+                    <!-- Role 2 -->
+                    <article class="exp-item">
+                        <div class="exp-header">
+                            <h3 class="exp-role">Site Execution & Supervision Engineer</h3>
+                            <span class="exp-date">Oct 2021 – Oct 2022</span>
+                        </div>
+                        <div class="exp-company">West Somid Development <span>| West Somid, 6th of October</span></div>
+                        <ul class="exp-bullets">
+                            <li>Supervised turnkey interior and exterior architectural finishing across 4 residential luxury units and 5+ concurrent construction villa sites.</li>
+                            <li>Directing masonry, cement plastering, MEP routing, gypsum ceilings, marble flooring, and exterior stone cladding.</li>
+                            <li>Audited subcontractor milestone billings, verified daily work logs, and enforced zero-defect client handovers.</li>
+                        </ul>
+                    </article>
+
+                    <!-- Role 3 -->
+                    <article class="exp-item">
+                        <div class="exp-header">
+                            <h3 class="exp-role">Execution & Supervision Engineer</h3>
+                            <span class="exp-date">June 2020 – July 2021</span>
+                        </div>
+                        <div class="exp-company">Armed Forces Engineering Authority (الهيئة الهندسية) <span>| National Projects</span></div>
+                        <ul class="exp-bullets">
+                            <li><strong>City of Treasures (Marble & Granite City):</strong> Supervised subgrade preparation, plate load testing, concrete internal roads, and heavy-duty asphalt road paving.</li>
+                            <li><strong>Galala City & Resort Complex:</strong> Managed road alignment, grading, cut-and-fill slopes, asphalt paving, and stormwater drainage in mountainous terrain.</li>
+                            <li><strong>Dakhla & East Al Owainat Highway:</strong> Supervised regional highway development, bitumen prime/tack coats, asphalt compaction, and temperature control under strict military quality inspections.</li>
+                        </ul>
+                    </article>
+                </section>
+
+                <!-- Key Project Highlights -->
+                <section class="section-block">
+                    <h2 class="section-title"><i class="fas fa-layer-group"></i> Landmark Project Contributions</h2>
+                    <div class="project-tag-grid">
+                        <div class="project-tag-item">
+                            <strong>Kom Oshim Industrial Complex (Fayoum)</strong>
+                            <span>Industrial Factory Construction | ArteVo Co.</span>
+                        </div>
+                        <div class="project-tag-item">
+                            <strong>City of Treasures (Ain Sokhna)</strong>
+                            <span>Concrete & Asphalt Roads | Armed Forces Eng. Auth.</span>
+                        </div>
+                        <div class="project-tag-item">
+                            <strong>Galala City & Mountain Resort</strong>
+                            <span>Mountain Highway Network | Armed Forces Eng. Auth.</span>
+                        </div>
+                        <div class="project-tag-item">
+                            <strong>West Somid Residential Units</strong>
+                            <span>Turnkey Luxury Finishing | West Somid Development</span>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <!-- Right Column: Education, Skills, Courses -->
+            <aside class="col-sidebar">
+                <!-- Education -->
+                <section class="sidebar-item">
+                    <h2 class="section-title"><i class="fas fa-graduation-cap"></i> Education</h2>
+                    <div class="edu-box">
+                        <h4>B.Sc. in Civil Engineering</h4>
+                        <div class="edu-inst">Delta University for Science and Technology</div>
+                        <div class="edu-grade">Graduation Year: 2019 | Grade: Good</div>
+                    </div>
+                    <div class="edu-box">
+                        <h4>Graduation Project: Highway Engineering</h4>
+                        <div class="edu-inst">Highway, Traffic & Pavement Design</div>
+                        <div class="edu-grade" style="color: #10b981;">Grade: Excellent (امتياز)</div>
+                    </div>
+                </section>
+
+                <!-- Engineering Skills -->
+                <section class="sidebar-item">
+                    <h2 class="section-title"><i class="fas fa-tools"></i> Core Skills</h2>
+                    
+                    <div class="skill-group">
+                        <div class="skill-group-title">Site & Execution</div>
+                        <div class="skill-tags">
+                            <span class="skill-badge highlight">Site Supervision</span>
+                            <span class="skill-badge highlight">Roads & Paving</span>
+                            <span class="skill-badge">Reinforced Concrete</span>
+                            <span class="skill-badge">Turnkey Finishing</span>
+                            <span class="skill-badge">Subcontractor Mgmt</span>
+                            <span class="skill-badge">Quality Control (QC)</span>
+                            <span class="skill-badge">HSE Standards</span>
+                            <span class="skill-badge">Material Requisition</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-group">
+                        <div class="skill-group-title">Technical & Software</div>
+                        <div class="skill-tags">
+                            <span class="skill-badge highlight">AutoCAD (2D/3D)</span>
+                            <span class="skill-badge highlight">Primavera P6</span>
+                            <span class="skill-badge">Revit (Structure BIM)</span>
+                            <span class="skill-badge">Quantity Surveying</span>
+                            <span class="skill-badge">BOQ & Invoicing</span>
+                            <span class="skill-badge">MS Office & Excel</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Professional Courses & Certifications -->
+                <section class="sidebar-item">
+                    <h2 class="section-title"><i class="fas fa-certificate"></i> Certifications</h2>
+                    <ul class="cert-list">
+                        <li>
+                            <strong>Primavera P6 Professional</strong>
+                            <span>Project Planning & CPM Scheduling (Dec 2019)</span>
+                        </li>
+                        <li>
+                            <strong>Autodesk AutoCAD</strong>
+                            <span>Civil & Structural Drafting (Dec 2019 – Jan 2020)</span>
+                        </li>
+                        <li>
+                            <strong>Autodesk Revit (Structure)</strong>
+                            <span>BIM 3D Modeling (Feb 2020 – Feb 2022)</span>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- Languages -->
+                <section class="sidebar-item">
+                    <h2 class="section-title"><i class="fas fa-globe"></i> Languages</h2>
+                    <div class="lang-item">
+                        <span>Arabic</span>
+                        <span>Native</span>
+                    </div>
+                    <div class="lang-item">
+                        <span>English</span>
+                        <span>Professional Working</span>
+                    </div>
+                </section>
+
+                <!-- Key Attributes -->
+                <section class="sidebar-item">
+                    <h2 class="section-title"><i class="fas fa-check-circle"></i> Attributes</h2>
+                    <div class="skill-tags">
+                        <span class="skill-badge">On-Site Leadership</span>
+                        <span class="skill-badge">Technical Problem Solving</span>
+                        <span class="skill-badge">Schedule Adherence</span>
+                        <span class="skill-badge">Code Compliance</span>
+                    </div>
+                </section>
+            </aside>
+        </div>
+
+        <!-- Footer -->
+        <footer class="cv-footer">
+            <span>Eng. Mohamed Adel Nabih — Official Curriculum Vitae</span>
+            <span>Portfolio: <a href="https://mohalabxy81.github.io/my-portfolio-master/" target="_blank">mohalabxy81.github.io</a></span>
+        </footer>
+    </div>
+
+    <!-- Client-side PDF Generation Engine -->
+    <script src="JS/html2pdf.bundle.min.js"></script>
+    <script>
+        function generateAndDownloadPDF() {
+            const btn = document.getElementById('btnDownloadPDF');
+            const toast = document.getElementById('genToast');
+            const toastMsg = document.getElementById('genToastMsg');
+            
+            if (btn) {
+                btn.disabled = true;
+                btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> <span>Generating PDF...</span>';
+            }
+            
+            if (toast && toastMsg) {
+                toastMsg.textContent = 'Generating latest PDF from CV code...';
+                toast.classList.add('show');
+            }
+
+            // Target the CV container
+            const cvElement = document.querySelector('.cv-page');
+            const opt = {
+                margin: 0,
+                filename: 'Eng_Mohamed_Adel_Nabih_CV.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { 
+                    scale: 2, 
+                    useCORS: true, 
+                    logging: false,
+                    letterRendering: true,
+                    scrollX: 0,
+                    scrollY: 0
+                },
+                jsPDF: { 
+                    unit: 'mm', 
+                    format: 'a4', 
+                    orientation: 'portrait' 
+                }
+            };
+
+            html2pdf().set(opt).from(cvElement).save().then(() => {
+                if (btn) {
+                    btn.disabled = false;
+                    btn.innerHTML = '<i class="fas fa-check"></i> <span>Downloaded!</span>';
+                    setTimeout(() => {
+                        btn.innerHTML = '<i class="fas fa-file-download"></i> <span>Download Live PDF</span>';
+                    }, 3000);
+                }
+                if (toast && toastMsg) {
+                    toastMsg.textContent = 'Latest CV downloaded successfully!';
+                    setTimeout(() => {
+                        toast.classList.remove('show');
+                    }, 3000);
+                }
+            }).catch(err => {
+                console.warn('Direct html2pdf generation failed, falling back to print dialog:', err);
+                if (btn) {
+                    btn.disabled = false;
+                    btn.innerHTML = '<i class="fas fa-file-download"></i> <span>Download Live PDF</span>';
+                }
+                if (toast) {
+                    toast.classList.remove('show');
+                }
+                window.print();
+            });
+        }
+
+        // Auto-trigger if URL parameter download=1 or download=pdf is present
+        window.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.get('download') === '1' || urlParams.get('download') === 'pdf') {
+                setTimeout(generateAndDownloadPDF, 700);
+            }
+        });
+    </script>
+</body>
+</html>

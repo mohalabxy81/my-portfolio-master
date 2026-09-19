@@ -1,423 +1,1091 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohamed Hegazy - Civil Engineer & Full Stack Developer</title>
-    <meta name="description" content="Portfolio of Mohamed Hegazy - Civil Engineer and Full Stack Web Developer based in Egypt">
-    <meta name="keywords" content="civil engineer, web developer, full stack, portfolio">
+    <title>Eng. Mohamed Adel Nabih | Civil Site & Execution Engineer Portfolio</title>
+    <meta name="description"
+        content="Official Portfolio of Eng. Mohamed Adel Nabih (Hegazy) - Civil Site & Execution Engineer with 5+ years of experience in roads, infrastructure, reinforced concrete, and interior/exterior finishing in Egypt.">
+    <meta name="keywords"
+        content="Mohamed Adel Nabih, Mohamed Hegazy, Civil Engineer, Site Engineer, Roads, Asphalt, Reinforced Concrete, Finishing, Egypt Construction, Armed Forces Engineering Authority, West Somid Development, ArteVo Co.">
+    <meta name="author" content="Eng. Mohamed Adel Nabih">
     
-    <!-- fonts style sheet -->
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Eng. Mohamed Adel Nabih | Civil Site & Execution Engineer">
+    <meta property="og:description"
+        content="Civil Engineer specializing in site execution, supervision, road infrastructure, concrete structures, and architectural finishing in Egypt.">
+    <meta property="og:image" content="./assets/images/about-photo.webp">
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Eng. Mohamed Adel Nabih | Civil Site & Execution Engineer">
+    <meta name="twitter:description" content="Civil Site Execution & Supervision Engineer with 5+ years of experience in roads, concrete, and turnkey finishing in Egypt.">
+    <meta name="twitter:image" content="./assets/images/about-photo.webp">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/webp" href="./assets/images/logo.webp">
+    <meta name="theme-color" content="#0a0e17">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <!-- bootstrap style sheet -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&family=Outfit:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    
+    <!-- Bootstrap 5 CSS -->
     <link rel="stylesheet" href="CSS/bootstrap.min.css">
-    <!-- slick slider style sheet -->
+    <!-- Slick Slider CSS -->
     <link rel="stylesheet" href="CSS/slick.css">
     <link rel="stylesheet" href="CSS/slick-theme.css">
-    <!-- fontawsome style sheet -->
+    <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="CSS/all.min.css">
-    <!-- custom style sheet -->
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="CSS/style.css">
 </head>
-<body data-bs-spy="scroll" data-bs-target="#nav">
 
-    <!-------------------- start loading screen -------------------->
-    <div id="loading">
-        <div class="sk-circle">
-            <div class="sk-circle1 sk-child"></div>
-            <div class="sk-circle2 sk-child"></div>
-            <div class="sk-circle3 sk-child"></div>
-            <div class="sk-circle4 sk-child"></div>
-            <div class="sk-circle5 sk-child"></div>
-            <div class="sk-circle6 sk-child"></div>
-            <div class="sk-circle7 sk-child"></div>
-            <div class="sk-circle8 sk-child"></div>
-            <div class="sk-circle9 sk-child"></div>
-            <div class="sk-circle10 sk-child"></div>
-            <div class="sk-circle11 sk-child"></div>
-            <div class="sk-circle12 sk-child"></div>
-          </div>
+<body>
+
+    <!-- Skip link for keyboard accessibility -->
+    <a href="#mainContent" class="skip-link">Skip to main content</a>
+
+    <!-------------------- Loading Screen -------------------->
+    <div id="loading" aria-hidden="true">
+        <div class="loader-content">
+            <div class="loader-helmet">
+                <i class="fas fa-hard-hat" aria-hidden="true"></i>
+            </div>
+            <div class="sk-circle" aria-label="Loading portfolio">
+                <div class="sk-circle1 sk-child"></div>
+                <div class="sk-circle2 sk-child"></div>
+                <div class="sk-circle3 sk-child"></div>
+                <div class="sk-circle4 sk-child"></div>
+                <div class="sk-circle5 sk-child"></div>
+                <div class="sk-circle6 sk-child"></div>
+                <div class="sk-circle7 sk-child"></div>
+                <div class="sk-circle8 sk-child"></div>
+                <div class="sk-circle9 sk-child"></div>
+                <div class="sk-circle10 sk-child"></div>
+                <div class="sk-circle11 sk-child"></div>
+                <div class="sk-circle12 sk-child"></div>
+            </div>
+            <p class="loader-text">Eng. Mohamed Adel Nabih</p>
+        </div>
     </div>
-    <!-------------------- end loading screen -------------------->
+    <!-------------------- End Loading Screen -------------------->
 
-    <!-------------------- start navbar -------------------->
-    <nav id="nav" class="navbar navbar-expand-lg">
+    <!-------------------- Navigation Bar -------------------->
+    <nav id="nav" class="navbar navbar-expand-lg" aria-label="Primary Navigation">
         <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#home">
+                <img src="./assets/images/logo.webp" alt="Eng. Mohamed Adel Logo" class="brand-logo" width="44" height="44">
+                <div class="brand-text ms-2">
+                    <span class="brand-name">Eng. Mohamed Adel</span>
+                    <span class="brand-role">Civil Engineer</span>
+                </div>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation menu" id="navbarToggleBtn">
+                <i class="fas fa-bars" id="navToggleIcon" aria-hidden="true"></i>
+            </button>
 
-          <a class="navbar-brand" href="#">
-              <img src="./assets/images/logo.webp" alt="Mohamed Hegazy Logo">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-bars" id="navToggleIcon"></i>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav  mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#home">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#expertiseArea">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#portfolio">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#contact">Contact</a>
-              </li>
-            </ul>
-          </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#expertiseArea">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#timeline">Timeline</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                        <button type="button" class="btn nav-cv-btn" data-bs-toggle="modal" data-bs-target="#cvModal" aria-label="View or download CV">
+                            <i class="fas fa-file-download me-1" aria-hidden="true"></i> CV
+                        </button>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
-    <!-------------------- end navbar -------------------->
+    <!-------------------- End Navigation Bar -------------------->
 
-    <!------------------- start header -------------------->
-    <header id="home" >
-        <div class="container position-relative">
-            <div class="row">
+    <!-------------------- Hero Section -------------------->
+    <header id="home">
+        <div class="container position-relative hero-container">
+            <div class="row align-items-center">
                 <div class="col-lg-8">
                     <div class="home-content">
-                        <h4><span class="line"></span> hello</h4>
-                        <h1>I'm Mohamed <span>Hegazy</span></h1>
-                        <p class="tagline"><span>I'm </span> <span id="typed" class=""></span></p>
-                        <a href="https://drive.google.com/file/d/1example/view" download="Mohamed_Hegazy_CV.pdf" class="main-btn my-4">Download CV</a>
+                        <div class="hero-badge mb-3">
+                            <span class="status-dot" aria-hidden="true"></span> Available for Site Supervision & Projects
+                        </div>
+                        <h4><span class="line" aria-hidden="true"></span> Hello, Welcome</h4>
+                        <h1 class="hero-title">I'm Eng. Mohamed <span>Adel</span></h1>
+                        <h2 class="hero-alias">Mohamed Adel Nabih (Hegazy)</h2>
+                        <p class="tagline"><span>Specialized in </span><span id="typed"></span></p>
+                        <p class="hero-intro">
+                            Over 5 years of proven field expertise in site execution, highway engineering, 
+                            reinforced concrete structures, and premium finishing across Egypt's landmark projects.
+                        </p>
+                        <div class="hero-actions d-flex flex-wrap gap-3 my-4">
+                            <a href="#portfolio" class="main-btn"><i class="fas fa-drafting-compass me-2" aria-hidden="true"></i>Explore Projects</a>
+                            <a href="#contact" class="main-btn btn-outline-accent"><i class="fas fa-paper-plane me-2" aria-hidden="true"></i>Get In Touch</a>
+                            <a href="cv.html?download=1" target="_blank" class="main-btn btn-cv-accent" aria-label="Generate and Download Latest Live PDF CV">
+                                <i class="fas fa-file-pdf me-2" aria-hidden="true"></i>Download CV
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-
-
         </div>
-        <div class="home-layout">
+        <div class="home-layout" aria-hidden="true">
             Civil Site<br>
             Engineer<br>
-            &<br>
-            Full Stack Dev<br>
         </div>
-        <a class="home-link" href="#about">
-            <i class="fas fa-chevron-down slideInDown"></i>
+        <a class="home-link" href="#about" aria-label="Scroll to About Section">
+            <i class="fas fa-chevron-down" aria-hidden="true"></i>
         </a>
     </header>
-    <!-------------------- end header -------------------->
+    <!-------------------- End Hero Section -------------------->
 
-    <!------------------- start about -------------------->
-    <section id="about" class="section">
-        <div class="container">
-            <div class="about-content">
-                <div class="row">
-                    <div class="col-lg-5">
-                        <div class="about-img">
-                            <img src="./assets/images/about-photo.webp" alt="Mohamed Hegazy" class=" img-fluid rounded-3 ">
+    <!-- Semantic Main Content Wrapper -->
+    <main id="mainContent">
+
+        <!-------------------- Impact Statistics Counter -------------------->
+        <section id="stats" class="stats-section" aria-label="Key Career Statistics">
+            <div class="container">
+                <div class="stats-grid stagger-children">
+                    <div class="stat-card reveal">
+                        <div class="stat-icon" aria-hidden="true">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3 class="counter" data-target="5">5+</h3>
+                            <p>Years Field Experience</p>
                         </div>
                     </div>
-                    <div class="col-lg-7">
-                        <div class="about-information">
-                            <h2 class="section-title"><span class="line"></span>About Me</h2>
-                            <p>
-                                I'm a dedicated professional with expertise spanning civil engineering and full-stack web development. 
-                                With hands-on experience in construction project management and modern web technologies, I deliver comprehensive solutions 
-                                that combine engineering precision with technical innovation.
-                            </p>
-                            <p>
-                                Based in Dakahlia, Egypt, I specialize in site execution, supervision, and creating responsive web applications 
-                                that solve real-world problems.
-                            </p>
-                            <h2 class="signature">Mohamed Hegazy</h2>
-                            <a href="#contact" class="main-btn">Let's Work Together</a>
+                    <div class="stat-card reveal">
+                        <div class="stat-icon" aria-hidden="true">
+                            <i class="fas fa-road"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3 class="counter" data-target="10">10+</h3>
+                            <p>Major Infrastructure Projects</p>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="about-skills">
-                <div class="row">
-                    <div class="col-md-4 d-flex align-items-center">
-                        <h2 class="section-title mb-3"><span class="line"></span>My Skills</h2>
+                    <div class="stat-card reveal">
+                        <div class="stat-icon" aria-hidden="true">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3 class="counter" data-target="50">50+</h3>
+                            <p>Units Supervised & Delivered</p>
+                        </div>
                     </div>
-                    <div class="col-md-8">
-                        <div id="skills">
-                            <div class="skill HTML">
-                                <div class="skill-info">
-                                    <span><i class="fab fa-html5"></i> HTML5</span>
-                                    <span>90%</span>
-                                </div>
-                                <div class="skill-progressbar">
-                                    <div class="percentage HTML"></div>
-                                </div>
-                            </div>
-                            <div class="skill CSS">
-                                <div class="skill-info">
-                                    <span><i class="fab fa-css3-alt"></i> CSS3</span>
-                                    <span>85%</span>
-                                </div>
-                                <div class="skill-progressbar">
-                                    <div class="percentage CSS"></div>
-                                </div>
-                            </div>
-                            <div class="skill SCSS">
-                                <div class="skill-info">
-                                    <span><i class="fab fa-sass"></i> SCSS</span>
-                                    <span>80%</span>
-                                </div>
-                                <div class="skill-progressbar">
-                                    <div class="percentage SCSS"></div>
-                                </div>
-                            </div>
-                            <div class="skill Bootstrap">
-                                <div class="skill-info">
-                                    <span><i class="fab fa-bootstrap"></i> Bootstrap</span>
-                                    <span>95%</span>
-                                </div>
-                                <div class="skill-progressbar">
-                                    <div class="percentage BS"></div>
-                                </div>
-                            </div>
-                            <div class="skill JS">
-                                <div class="skill-info">
-                                    <span><i class="fab fa-js-square"></i> JavaScript</span>
-                                    <span>75%</span>
-                                </div>
-                                <div class="skill-progressbar">
-                                    <div class="percentage JS"></div>
-                                </div>
-                            </div>
-                            <div class="skill NG">
-                                <div class="skill-info">
-                                    <span><i class="fab fa-angular"></i> Angular</span>
-                                    <span>70%</span>
-                                </div>
-                                <div class="skill-progressbar">
-                                    <div class="percentage NG"></div>
-                                </div>
-                            </div>
+                    <div class="stat-card reveal">
+                        <div class="stat-icon" aria-hidden="true">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3 class="counter" data-target="100">100%</h3>
+                            <p>Safety & Code Compliance</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!------------------- end about -------------------->
+        </section>
+        <!-------------------- End Impact Statistics -------------------->
 
-    <!------------------- start expertise area -------------------->
-    <section id="expertiseArea" class="section">
-        <div class="container">
-            <h2 class="section-title text-center">Expertise Areas</h2>
-            <p class="section-p">Services and skills that help me deliver quality solutions</p>
-            <div class="slider" >
-                <div>
-                    <div class="expertise-item">
-                        <i class="fas fa-code"></i>
-                        <h3>Web Development</h3>
-                        <p>Full-stack web development using modern frameworks, HTML5, CSS3, and JavaScript to create responsive, user-friendly applications.</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="expertise-item">
-                        <i class="fas fa-pencil-ruler"></i>
-                        <h3>Responsive Design</h3>
-                        <p>Craft beautiful, responsive websites that work seamlessly across all devices—from mobile phones to large desktop screens.</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="expertise-item">
-                        <i class="far fa-file-code"></i>
-                        <h3>Clean Code</h3>
-                        <p>I write clean, maintainable code optimized for SEO and future scalability, following best practices and industry standards.</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="expertise-item">
-                        <i class="fas fa-tasks"></i>
-                        <h3>Project Management</h3>
-                        <p>Experienced in planning, executing, and overseeing construction and software projects from conception to completion.</p>
+        <!-------------------- About Section -------------------->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="about-content">
+                    <div class="row align-items-center">
+                        <div class="col-lg-5 mb-5 mb-lg-0">
+                            <div class="about-img-wrapper">
+                                <div class="about-img">
+                                    <img src="./assets/images/about-photo.webp" alt="Eng. Mohamed Adel Nabih - Civil Site Engineer"
+                                        class="img-fluid rounded-4 shadow-lg" width="420" height="525" loading="lazy">
+                                </div>
+                                <div class="exp-badge">
+                                    <span class="exp-number">5+</span>
+                                    <span class="exp-text">Years of<br>Excellence</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="about-information">
+                                <h2 class="section-title reveal"><span class="line" aria-hidden="true"></span>About Me</h2>
+                                <h3 class="about-tagline reveal">Civil Site Execution & Supervision Engineer</h3>
+                                <p>
+                                    I am a passionate Civil Engineer holding a Bachelor's Degree in Civil Engineering from 
+                                    <strong>Delta University for Science and Technology</strong> (Graduation Project: 
+                                    <em>Highway Engineering with Grade Excellent</em>).
+                                </p>
+                                <p>
+                                    My journey combines rigorous field execution with technical supervision. I served as an Execution 
+                                    & Supervision Engineer with the <strong>Armed Forces Engineering Authority</strong> on monumental 
+                                    national projects—including the <em>City of Treasures (Marble & Granite City)</em>, the 
+                                    <em>Galala City & Resort Complex</em>, and the <em>Dakhla – East Al Owainat Highway</em>.
+                                </p>
+                                <p>
+                                    Currently, I serve as a Site Execution & Structural Engineer with <strong>ArteVo Co.</strong>, 
+                                    leading the turnkey construction of industrial factories in the <em>Kom Oshim Industrial Zone (Fayoum)</em>—directing 
+                                    deep and shallow foundations, structural concrete framing, pre-engineered steel structures, heavy-duty power-troweled 
+                                    (helicopter) industrial concrete flooring, and MEP networks. Previously, I supervised luxury residential finishing 
+                                    and villa handovers with <strong>West Somid Development</strong>.
+                                </p>
+
+                                <div class="about-meta-grid my-4">
+                                    <div class="meta-item">
+                                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                                        <div>
+                                            <strong>Location</strong>
+                                            <span>Minyat Al Nasr, Dakahlia, Egypt</span>
+                                        </div>
+                                    </div>
+                                    <div class="meta-item">
+                                        <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+                                        <div>
+                                            <strong>Degree</strong>
+                                            <span>B.Sc. Civil Engineering (2019)</span>
+                                        </div>
+                                    </div>
+                                    <div class="meta-item">
+                                        <i class="fas fa-phone-alt" aria-hidden="true"></i>
+                                        <div>
+                                            <strong>Phone</strong>
+                                            <span class="copyable-text" data-copy="+201558556588" title="Click to copy phone number">+20 155 855 6588 <i class="far fa-copy ms-1" aria-hidden="true"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="meta-item">
+                                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                                        <div>
+                                            <strong>Email</strong>
+                                            <span class="copyable-text" data-copy="mohalab_xy81@yahoo.com" title="Click to copy email">mohalab_xy81@yahoo.com <i class="far fa-copy ms-1" aria-hidden="true"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex align-items-center flex-wrap gap-4 pt-2">
+                                    <h2 class="signature mb-0">Mohamed Adel</h2>
+                                    <a href="#contact" class="main-btn">Let's Work Together</a>
+                                    <a href="cv.html?download=1" target="_blank" class="btn btn-outline-light rounded-pill px-4 py-2" aria-label="Generate and Download Latest Resume PDF">
+                                        <i class="fas fa-file-download me-2" aria-hidden="true"></i>Download Resume
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
+                <!-- Engineering Skills -->
+                <div class="about-skills mt-5">
+                    <div class="row">
+                        <div class="col-md-4 d-flex flex-column justify-content-center">
+                            <h2 class="section-title mb-2"><span class="line" aria-hidden="true"></span>Technical Skills</h2>
+                            <p class="text-muted">Mastery of state-of-the-art engineering software, structural BIM tools, and on-site execution standards.</p>
+                        </div>
+                        <div class="col-md-8">
+                            <div id="skills">
+                                <div class="skill">
+                                    <div class="skill-info">
+                                        <span><i class="fas fa-hard-hat" aria-hidden="true"></i> Site Execution & Supervision</span>
+                                        <span class="skill-val">90%</span>
+                                    </div>
+                                    <div class="skill-progressbar">
+                                        <div class="percentage" data-percent="90"></div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <div class="skill-info">
+                                        <span><i class="fas fa-cubes" aria-hidden="true"></i> Reinforced Concrete & Structural Works</span>
+                                        <span class="skill-val">90%</span>
+                                    </div>
+                                    <div class="skill-progressbar">
+                                        <div class="percentage" data-percent="90"></div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <div class="skill-info">
+                                        <span><i class="fas fa-drafting-compass" aria-hidden="true"></i> Autodesk AutoCAD (2D/3D)</span>
+                                        <span class="skill-val">85%</span>
+                                    </div>
+                                    <div class="skill-progressbar">
+                                        <div class="percentage" data-percent="85"></div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <div class="skill-info">
+                                        <span><i class="fas fa-building" aria-hidden="true"></i> Autodesk Revit (Structure BIM)</span>
+                                        <span class="skill-val">80%</span>
+                                    </div>
+                                    <div class="skill-progressbar">
+                                        <div class="percentage" data-percent="80"></div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <div class="skill-info">
+                                        <span><i class="fas fa-project-diagram" aria-hidden="true"></i> Primavera P6 (Planning & Scheduling)</span>
+                                        <span class="skill-val">75%</span>
+                                    </div>
+                                    <div class="skill-progressbar">
+                                        <div class="percentage" data-percent="75"></div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <div class="skill-info">
+                                        <span><i class="fas fa-calculator" aria-hidden="true"></i> Quantity Surveying (حصر الكميات) & BOQ</span>
+                                        <span class="skill-val">85%</span>
+                                    </div>
+                                    <div class="skill-progressbar">
+                                        <div class="percentage" data-percent="85"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
+        <!-------------------- End About Section -------------------->
 
-        <div class="hire-me py-5">
-            <p>Ready to bring your project to life?</p>
-            <h2>Let's Create Something Great Together</h2>
-            <a href="#contact" class="main-btn mx-auto">Get in Touch</a>
-        </div>
-    </section>
-    <!------------------- end expertise area -------------------->
-
-    <!------------------- start portfolio -------------------->
-    <section id="portfolio" class="section">
-        <div class="container">
-            <h2 class="section-title text-center">Featured Projects</h2>
-            <p class="section-p">Explore my latest work and featured projects</p>
-            <div class="works mb-5">
-                <div class="work work1">
-                    <a href="#" target="_blank" title="Gym Template"></a>
-                    <div class="work-layout">
-                        <span>Template</span>
-                        <h4>Fitness Gym</h4>
-                        <p class="work-tech">HTML • CSS • JavaScript</p>
+        <!-------------------- Services / Expertise Area -------------------->
+        <section id="expertiseArea" class="section">
+            <div class="container">
+                <h2 class="section-title text-center reveal">Expertise Areas</h2>
+                <p class="section-p reveal">Comprehensive engineering solutions from blueprint to final site handover</p>
+                
+                <div class="slider" aria-label="Services Slider">
+                    <div>
+                        <div class="expertise-item">
+                            <div class="expertise-icon" aria-hidden="true">
+                                <i class="fas fa-road"></i>
+                            </div>
+                            <h3>Roads & Asphalt Paving</h3>
+                            <p>Execution and supervision of concrete internal roads, sub-base preparation, asphalt paving, grading, and major highway connections.</p>
+                            <span class="service-tag">Infrastructure</span>
+                        </div>
                     </div>
-                </div>
-                <div class="work work2">
-                    <a href="#" target="_blank" title="Trending Shows App"></a>
-                    <div class="work-layout">
-                        <span>Application</span>
-                        <h4>Trending Shows</h4>
-                        <p class="work-tech">HTML • CSS • API</p>
+                    <div>
+                        <div class="expertise-item">
+                            <div class="expertise-icon" aria-hidden="true">
+                                <i class="fas fa-hard-hat"></i>
+                            </div>
+                            <h3>Site Execution & Supervision</h3>
+                            <p>Direct on-site leadership, daily workforce coordination, strict quality assurance, adherence to approved shop drawings, and safety compliance.</p>
+                            <span class="service-tag">Site Management</span>
+                        </div>
                     </div>
-                </div>
-                <div class="work work3">
-                    <a href="#" target="_blank" title="Food Delivery App"></a>
-                    <div class="work-layout">
-                        <span>Application</span>
-                        <h4>Food Delivery</h4>
-                        <p class="work-tech">HTML • CSS • JavaScript</p>
+                    <div>
+                        <div class="expertise-item">
+                            <div class="expertise-icon" aria-hidden="true">
+                                <i class="fas fa-layer-group"></i>
+                            </div>
+                            <h3>Concrete & Reinforcement</h3>
+                            <p>Precision execution of footings, columns, slabs, raft foundations, rebar inspection, concrete pouring supervision, and slump/cube testing.</p>
+                            <span class="service-tag">Structural Works</span>
+                        </div>
                     </div>
-                </div>
-                <div class="work work4">
-                    <a href="#" target="_blank" title="Travel Template"></a>
-                    <div class="work-layout">
-                        <span>Template</span>
-                        <h4>Travel Booking</h4>
-                        <p class="work-tech">HTML • SCSS • Bootstrap</p>
+                    <div>
+                        <div class="expertise-item">
+                            <div class="expertise-icon" aria-hidden="true">
+                                <i class="fas fa-paint-roller"></i>
+                            </div>
+                            <h3>Finishing & Architectural Decor</h3>
+                            <p>Supervising turnkey architectural finishing: masonry, plastering, interior gypsum, flooring, exterior facade cladding, and client inspection handovers.</p>
+                            <span class="service-tag">Turnkey Finishing</span>
+                        </div>
                     </div>
-                </div>
-                <div class="work work5">
-                    <a href="#" target="_blank" title="Food Order App"></a>
-                    <div class="work-layout">
-                        <span>Application</span>
-                        <h4>Food Order</h4>
-                        <p class="work-tech">HTML • CSS • JavaScript</p>
-                    </div>
-                </div>
-                <div class="work work6">
-                    <a href="#" target="_blank" title="Cafe Management"></a>
-                    <div class="work-layout">
-                        <span>Application</span>
-                        <h4>Cafe Management</h4>
-                        <p class="work-tech">HTML • CSS • Bootstrap</p>
+                    <div>
+                        <div class="expertise-item">
+                            <div class="expertise-icon" aria-hidden="true">
+                                <i class="fas fa-tasks"></i>
+                            </div>
+                            <h3>Planning & Quantity Surveying</h3>
+                            <p>Project timeline scheduling with Primavera P6, preparation of bills of quantities (BOQ), contractor invoice audits, and material requisition.</p>
+                            <span class="service-tag">Engineering Management</span>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="resume mt-5 pt-2">
-                <h2 class="section-title text-center mb-5">Professional Timeline</h2>
+            <div class="container mt-5">
+                <div class="hire-me py-5">
+                    <div class="hire-me-content">
+                        <p class="hire-subtitle">Looking for an experienced Civil Site Engineer?</p>
+                        <h2 class="hire-title">Let's Build Something Landmark Together</h2>
+                        <p class="hire-desc">Available for full-time site supervision, infrastructure execution, or engineering consultancy in Egypt.</p>
+                        <div class="d-flex justify-content-center gap-3 flex-wrap mt-4">
+                            <a href="#contact" class="main-btn"><i class="fas fa-comment-alt me-2" aria-hidden="true"></i>Discuss Your Project</a>
+                            <a href="https://wa.me/201558556588" target="_blank" rel="noopener noreferrer" class="main-btn btn-whatsapp-direct" aria-label="Open WhatsApp Chat">
+                                <i class="fab fa-whatsapp me-2" aria-hidden="true"></i>Quick WhatsApp Chat
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-------------------- End Expertise Area -------------------->
+
+        <!-------------------- Key Projects Section -------------------->
+        <section id="portfolio" class="section">
+            <div class="container">
+                <h2 class="section-title text-center reveal">Featured Projects</h2>
+                <p class="section-p reveal">Proven track record across national infrastructure, structural engineering, and residential finishing</p>
+
+                <!-- Project Category Filter Pills -->
+                <div class="project-filters text-center mb-5" role="group" aria-label="Filter Projects by Category">
+                    <button type="button" class="filter-btn active" data-filter="all" aria-pressed="true">
+                        <i class="fas fa-th-large me-1" aria-hidden="true"></i> All Projects
+                    </button>
+                    <button type="button" class="filter-btn" data-filter="roads" aria-pressed="false">
+                        <i class="fas fa-road me-1" aria-hidden="true"></i> Roads & Highways
+                    </button>
+                    <button type="button" class="filter-btn" data-filter="concrete" aria-pressed="false">
+                        <i class="fas fa-cubes me-1" aria-hidden="true"></i> Structural Concrete
+                    </button>
+                    <button type="button" class="filter-btn" data-filter="finishing" aria-pressed="false">
+                        <i class="fas fa-paint-roller me-1" aria-hidden="true"></i> Finishing & Decor
+                    </button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid mb-5">
+                    <div class="row g-4 stagger-children" id="projectsContainer">
+                        <!-- Project 1 -->
+                        <div class="col-md-6 col-lg-4 project-item reveal" data-category="roads">
+                            <div class="project-card">
+                                <div class="project-card-header">
+                                    <div class="project-icon" aria-hidden="true">
+                                        <i class="fas fa-gem"></i>
+                                    </div>
+                                    <span class="badge category-badge">Roads & Paving</span>
+                                </div>
+                                <h4>City of Treasures</h4>
+                                <p class="project-arabic">مدينة الرخام والجرانيت</p>
+                                <p class="project-type">Marble & Granite Industrial City</p>
+                                <p class="project-desc">
+                                    Execution and supervision of heavy-duty concrete internal roads and asphalt paving designed for heavy industrial transport.
+                                </p>
+                                <div class="project-meta-tags">
+                                    <span><i class="fas fa-shield-alt" aria-hidden="true"></i> Armed Forces Eng. Authority</span>
+                                    <span><i class="fas fa-check-circle" aria-hidden="true"></i> Concrete & Asphalt</span>
+                                </div>
+                                <button type="button" class="btn btn-project-detail mt-3 w-100" data-project-id="p1" aria-label="View technical specifications for City of Treasures project">
+                                    <i class="fas fa-info-circle me-1" aria-hidden="true"></i> View Project Specs
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Project 2 -->
+                        <div class="col-md-6 col-lg-4 project-item reveal" data-category="roads">
+                            <div class="project-card">
+                                <div class="project-card-header">
+                                    <div class="project-icon" aria-hidden="true">
+                                        <i class="fas fa-mountain"></i>
+                                    </div>
+                                    <span class="badge category-badge">Roads & Infrastructure</span>
+                                </div>
+                                <h4>Galala City & Resort</h4>
+                                <p class="project-arabic">مدينة ومنتجع الجلالة</p>
+                                <p class="project-type">Tourism & Hospitality Megaproject</p>
+                                <p class="project-desc">
+                                    Supervised asphalt internal road network construction, grading, and stormwater drainage coordination in complex mountain topography.
+                                </p>
+                                <div class="project-meta-tags">
+                                    <span><i class="fas fa-shield-alt" aria-hidden="true"></i> Armed Forces Eng. Authority</span>
+                                    <span><i class="fas fa-check-circle" aria-hidden="true"></i> Mountain Highway Network</span>
+                                </div>
+                                <button type="button" class="btn btn-project-detail mt-3 w-100" data-project-id="p2" aria-label="View technical specifications for Galala City project">
+                                    <i class="fas fa-info-circle me-1" aria-hidden="true"></i> View Project Specs
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Project 3 -->
+                        <div class="col-md-6 col-lg-4 project-item reveal" data-category="roads">
+                            <div class="project-card">
+                                <div class="project-card-header">
+                                    <div class="project-icon" aria-hidden="true">
+                                        <i class="fas fa-road"></i>
+                                    </div>
+                                    <span class="badge category-badge">Highways</span>
+                                </div>
+                                <h4>Dakhla & East Al Owainat Highway</h4>
+                                <p class="project-arabic">تطوير طريق الداخلة - شرق العوينات</p>
+                                <p class="project-type">Main National Highway Development</p>
+                                <p class="project-desc">
+                                    Full-scale road development connecting strategic agricultural hubs, supervising soil stabilization, sub-base layers, and asphalt binder.
+                                </p>
+                                <div class="project-meta-tags">
+                                    <span><i class="fas fa-shield-alt" aria-hidden="true"></i> Armed Forces Eng. Authority</span>
+                                    <span><i class="fas fa-check-circle" aria-hidden="true"></i> Highway Engineering</span>
+                                </div>
+                                <button type="button" class="btn btn-project-detail mt-3 w-100" data-project-id="p3" aria-label="View technical specifications for Dakhla Highway project">
+                                    <i class="fas fa-info-circle me-1" aria-hidden="true"></i> View Project Specs
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Project 4 -->
+                        <div class="col-md-6 col-lg-4 project-item reveal" data-category="finishing">
+                            <div class="project-card">
+                                <div class="project-card-header">
+                                    <div class="project-icon" aria-hidden="true">
+                                        <i class="fas fa-home"></i>
+                                    </div>
+                                    <span class="badge category-badge">Finishing</span>
+                                </div>
+                                <h4>Residential Units - West Somid</h4>
+                                <p class="project-arabic">وحدات سكنية فاخرة - غرب سوميد</p>
+                                <p class="project-type">Turnkey Interior & Exterior Finishing</p>
+                                <p class="project-desc">
+                                    Supervised interior finishing of 4 residential units and comprehensive site management across 5+ concurrent luxury villas and buildings.
+                                </p>
+                                <div class="project-meta-tags">
+                                    <span><i class="fas fa-building" aria-hidden="true"></i> West Somid Development</span>
+                                    <span><i class="fas fa-check-circle" aria-hidden="true"></i> Turnkey Handover</span>
+                                </div>
+                                <button type="button" class="btn btn-project-detail mt-3 w-100" data-project-id="p4" aria-label="View technical specifications for West Somid residential project">
+                                    <i class="fas fa-info-circle me-1" aria-hidden="true"></i> View Project Specs
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Project 5 -->
+                        <div class="col-md-6 col-lg-4 project-item reveal" data-category="concrete">
+                            <div class="project-card">
+                                <div class="project-card-header">
+                                    <div class="project-icon" aria-hidden="true">
+                                        <i class="fas fa-industry"></i>
+                                    </div>
+                                    <span class="badge category-badge">Industrial & Structural</span>
+                                </div>
+                                <h4>Kom Oshim Industrial Factories</h4>
+                                <p class="project-arabic">إنشاء مصانع منطقة كوم أوشيم الصناعية</p>
+                                <p class="project-type">Industrial Facilities & Structural Engineering</p>
+                                <p class="project-desc">
+                                    Turnkey construction of industrial factory complexes in Kom Oshim (Fayoum), including deep/shallow foundations, structural framing, heavy-duty helicopter concrete flooring, and MEP coordination.
+                                </p>
+                                <div class="project-meta-tags">
+                                    <span><i class="fas fa-industry" aria-hidden="true"></i> ArteVo Co.</span>
+                                    <span><i class="fas fa-check-circle" aria-hidden="true"></i> Fayoum Industrial Zone</span>
+                                </div>
+                                <button type="button" class="btn btn-project-detail mt-3 w-100" data-project-id="p5" aria-label="View technical specifications for Kom Oshim industrial factories project">
+                                    <i class="fas fa-info-circle me-1" aria-hidden="true"></i> View Project Specs
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Project 6 -->
+                        <div class="col-md-6 col-lg-4 project-item reveal" data-category="finishing">
+                            <div class="project-card">
+                                <div class="project-card-header">
+                                    <div class="project-icon" aria-hidden="true">
+                                        <i class="fas fa-palette"></i>
+                                    </div>
+                                    <span class="badge category-badge">Finishing & Decor</span>
+                                </div>
+                                <h4>Finishing & Modern Decorations</h4>
+                                <p class="project-arabic">تشطيبات وديكورات معمارية متكاملة</p>
+                                <p class="project-type">Architectural Execution & Decor</p>
+                                <p class="project-desc">
+                                    End-to-end execution of modern ceiling designs, facade stone cladding, ceramic tiling, and MEP coordination for commercial and residential clients.
+                                </p>
+                                <div class="project-meta-tags">
+                                    <span><i class="fas fa-paint-roller" aria-hidden="true"></i> ArteVo Co.</span>
+                                    <span><i class="fas fa-check-circle" aria-hidden="true"></i> Architectural Quality</span>
+                                </div>
+                                <button type="button" class="btn btn-project-detail mt-3 w-100" data-project-id="p6" aria-label="View technical specifications for finishing and decor project">
+                                    <i class="fas fa-info-circle me-1" aria-hidden="true"></i> View Project Specs
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-------------------- End Key Projects -------------------->
+
+        <!-------------------- Professional Timeline -------------------->
+        <section id="timeline" class="section">
+            <div class="container">
+                <h2 class="section-title text-center mb-2 reveal">Professional Career & Education</h2>
+                <p class="section-p reveal">Detailed milestones of engineering degrees, certifications, and leadership roles</p>
+
                 <div class="resume-info">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-5 ">
-                            <div class="res res-edu">
-                                <h5><i class="fas fa-graduation-cap"></i> EDUCATION</h5>
+                    <div class="row justify-content-center g-4">
+                        <!-- Education Column -->
+                        <div class="col-lg-6">
+                            <div class="timeline-column">
+                                <div class="timeline-header">
+                                    <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+                                    <h3>Education & Degree</h3>
+                                </div>
+                                
                                 <div class="res-item">
-                                    <span>2019</span>
+                                    <div class="res-badge">2014 – 2019</div>
                                     <h4>Bachelor of Civil Engineering</h4>
-                                    <p>Delta University for Science and Technology</p>
+                                    <p class="res-org"><i class="fas fa-university me-1" aria-hidden="true"></i> Delta University for Science and Technology</p>
+                                    <p class="res-detail">Graduated with <strong>Good</strong> cumulative rating. Strong foundation in structural analysis, soil mechanics, fluid dynamics, and construction management.</p>
                                 </div>
+
                                 <div class="res-item">
-                                    <span>2023 - 2024</span>
-                                    <h4>Web Development Diploma</h4>
-                                    <p>Full Stack Development • Tarmeez Academy, Cairo</p>
+                                    <div class="res-badge highlight-badge">Graduation Project</div>
+                                    <h4>Highway & Airport Engineering</h4>
+                                    <p class="res-org"><i class="fas fa-award me-1" aria-hidden="true"></i> Grade: <strong>Excellent (امتياز)</strong></p>
+                                    <p class="res-detail">Comprehensive geometric and pavement design of high-capacity highways, traffic capacity modeling, and pavement thickness calculations.</p>
+                                </div>
+
+                                <div class="timeline-header mt-4">
+                                    <i class="fas fa-certificate" aria-hidden="true"></i>
+                                    <h3>Certifications & Technical Training</h3>
+                                </div>
+
+                                <div class="res-item">
+                                    <div class="res-badge">Dec 2019</div>
+                                    <h4>Primavera P6 Professional</h4>
+                                    <p class="res-org">Project Planning, CPM Scheduling, Resource Allocation & Progress Tracking</p>
+                                </div>
+
+                                <div class="res-item">
+                                    <div class="res-badge">Dec 2019 – Jan 2020</div>
+                                    <h4>Autodesk AutoCAD Certified Training</h4>
+                                    <p class="res-org">2D/3D Structural & Civil Drafting, Shop Drawings & Reinforcement Detailing</p>
+                                </div>
+
+                                <div class="res-item">
+                                    <div class="res-badge">Feb 2020 – Feb 2022</div>
+                                    <h4>Autodesk Revit (Structure BIM)</h4>
+                                    <p class="res-org">BIM 3D Structural Modeling, Rebar Modeling, Clash Detection & Quantity Schedules</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-5">
-                            <div class="res res-exp">
-                                <h5><i class="fas fa-briefcase"></i> EXPERIENCE</h5>
+
+                        <!-- Experience Column -->
+                        <div class="col-lg-6">
+                            <div class="timeline-column">
+                                <div class="timeline-header">
+                                    <i class="fas fa-briefcase" aria-hidden="true"></i>
+                                    <h3>Work Experience</h3>
+                                </div>
+
+                                <div class="res-item active-role" aria-current="true">
+                                    <div class="res-badge current-badge">Oct 2022 – Present</div>
+                                    <h4>Site Execution & Structural Engineer</h4>
+                                    <p class="res-org"><i class="fas fa-industry me-1" aria-hidden="true"></i> ArteVo Co.</p>
+                                    <ul class="res-bullets">
+                                        <li>Leading turnkey construction of industrial factories in Kom Oshim Industrial Zone (Fayoum).</li>
+                                        <li>Directing reinforced concrete foundations, structural framing, pre-engineered steel structures, and heavy-duty power-troweled (helicopter) concrete flooring.</li>
+                                        <li>Managing structural quality assurance, slump & cube compressive tests (ECP 203), rebar spacing, and architectural finishing.</li>
+                                    </ul>
+                                </div>
+
                                 <div class="res-item">
-                                    <span>Present</span>
+                                    <div class="res-badge">Oct 2021 – Oct 2022</div>
+                                    <h4>Site Execution & Supervision Engineer</h4>
+                                    <p class="res-org"><i class="fas fa-building me-1" aria-hidden="true"></i> West Somid Development</p>
+                                    <ul class="res-bullets">
+                                        <li>Supervised turnkey interior & exterior finishing across 4 upscale residential units and 5+ active villa construction sites.</li>
+                                        <li>Monitored subcontractors for masonry, cement plastering, MEP routing, gypsum ceilings, and marble flooring.</li>
+                                        <li>Delivered final unit handovers to property owners in West Somid, 6th of October with zero-defect quality inspections.</li>
+                                    </ul>
+                                </div>
+
+                                <div class="res-item">
+                                    <div class="res-badge">June 2020 – July 2021</div>
                                     <h4>Execution & Supervision Engineer</h4>
-                                    <p>Armed Forces Engineering Authority<br>Overseeing concrete, reinforcement, and finishing work</p>
-                                </div>
-                                <div class="res-item">
-                                    <span>Recent</span>
-                                    <h4>Civil Engineer</h4>
-                                    <p>Al Qasim Integrated Contracting<br>Project execution and supervision</p>
+                                    <p class="res-org"><i class="fas fa-shield-alt me-1" aria-hidden="true"></i> Armed Forces Engineering Authority</p>
+                                    <ul class="res-bullets">
+                                        <li>Lead site execution on major national infrastructure: Marble & Granite City, Galala Resort, and Dakhla Highway.</li>
+                                        <li>Supervised concrete internal roads, subgrade grading, asphalt paving, and compaction tests.</li>
+                                        <li>Coordinated with technical consultancies and military project inspectors under strict deadlines.</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-    </section>
-    <!------------------- end portfolio -------------------->
+        </section>
+        <!-------------------- End Timeline -------------------->
 
-    <!------------------- start contact -------------------->
-    <section id="contact" class="section">
-        <div class="container">
-            <h2 class="section-title text-center mb-4">Get In Touch</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="contact contact-info">
-                        <h4>
-                            Let's create something amazing together<span> — just say hello!</span>
-                        </h4>
-                        <a href="tel:+201558556588"><i class="fas fa-phone-alt"></i>+20 155 855 6588</a>
-                        <a href="mailto:mohalab_xy81@yahoo.com"><i class="fas fa-envelope"></i>mohalab_xy81@yahoo.com</a>
-                        <a href="https://www.google.com/maps/place/Dakahlia+Governorate,+Egypt" target="_blank"><i class="fas fa-map-marker-alt"></i>Dakahlia Governorate, Egypt</a>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="contact contact-media">
-                        <h4>
-                            <span class="line d-md-none"></span>
-                            Connect With Me
-                        </h4>
-                        <div class="media-accounts">
-                            <a href="https://www.facebook.com/mohamedadel.nabih" target="_blank" class="media">
-                                <i class="fab fa-facebook-f"></i>
-                                <span>Facebook</span>
-                            </a>
-                            <a href="https://www.linkedin.com/in/mohalabxy81/" target="_blank" class="media">
-                                <i class="fab fa-linkedin-in"></i>
-                                <span>LinkedIn</span>
-                            </a>
-                            <a href="https://github.com/mohalabxy81" target="_blank" class="media">
-                                <i class="fab fa-github"></i>
-                                <span>GitHub</span>
-                            </a>
-                            <a href="https://instagram.com/m7med.hegazy" target="_blank" class="media">
-                                <i class="fab fa-instagram"></i>
-                                <span>Instagram</span>
-                            </a>
-                            <a href="mailto:mohalab_xy81@yahoo.com" class="media">
-                                <i class="fab fa-google"></i>
-                                <span>Gmail</span>
-                            </a>
+        <!-------------------- Contact Section -------------------->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title text-center mb-2 reveal">Get In Touch</h2>
+                <p class="section-p reveal">Have an upcoming project or inquiry? Contact me directly or send an inquiry below</p>
+                
+                <div class="row g-4 align-items-stretch">
+                    <!-- Column 1: Direct Contact Info & Media -->
+                    <div class="col-lg-5">
+                        <div class="contact-info-card h-100">
+                            <div class="contact-card-header mb-4">
+                                <h4>Let's Build Together</h4>
+                                <p>I am available for full-time engineering appointments, site consultation, and construction project execution.</p>
+                            </div>
+
+                            <div class="contact-channels">
+                                <a href="tel:+201558556588" class="channel-link" aria-label="Call primary phone number">
+                                    <div class="channel-icon" aria-hidden="true">
+                                        <i class="fas fa-phone-alt"></i>
+                                    </div>
+                                    <div class="channel-details">
+                                        <span class="channel-label">Primary Phone</span>
+                                        <span class="channel-val">+20 155 855 6588</span>
+                                    </div>
+                                </a>
+
+                                <a href="tel:+201064833885" class="channel-link" aria-label="Call secondary phone number">
+                                    <div class="channel-icon" aria-hidden="true">
+                                        <i class="fas fa-mobile-alt"></i>
+                                    </div>
+                                    <div class="channel-details">
+                                        <span class="channel-label">Secondary Phone</span>
+                                        <span class="channel-val">+20 106 483 3885</span>
+                                    </div>
+                                </a>
+
+                                <a href="https://wa.me/201558556588" target="_blank" rel="noopener noreferrer" class="channel-link whatsapp-channel" aria-label="Chat on WhatsApp">
+                                    <div class="channel-icon" aria-hidden="true">
+                                        <i class="fab fa-whatsapp"></i>
+                                    </div>
+                                    <div class="channel-details">
+                                        <span class="channel-label">WhatsApp Instant Chat</span>
+                                        <span class="channel-val">+20 155 855 6588</span>
+                                    </div>
+                                </a>
+
+                                <a href="mailto:mohalab_xy81@yahoo.com" class="channel-link" aria-label="Send an email to Mohamed Adel">
+                                    <div class="channel-icon" aria-hidden="true">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="channel-details">
+                                        <span class="channel-label">Email Address</span>
+                                        <span class="channel-val">mohalab_xy81@yahoo.com</span>
+                                    </div>
+                                </a>
+
+                                <div class="channel-link">
+                                    <div class="channel-icon" aria-hidden="true">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="channel-details">
+                                        <span class="channel-label">Location / Base</span>
+                                        <span class="channel-val">Minyat Al Nasr, Dakahlia Governorate, Egypt</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="contact-social-wrap mt-4">
+                                <h6>Connect on Professional Networks</h6>
+                                <div class="social-pills d-flex flex-wrap gap-2 mt-2">
+                                    <a href="https://www.linkedin.com/in/mohalabxy81/" target="_blank" rel="noopener noreferrer" class="social-pill linkedin" title="Visit LinkedIn Profile" aria-label="LinkedIn Profile">
+                                        <i class="fab fa-linkedin-in" aria-hidden="true"></i> LinkedIn
+                                    </a>
+                                    <a href="https://www.facebook.com/mohamedadel.nabih" target="_blank" rel="noopener noreferrer" class="social-pill facebook" title="Visit Facebook Profile" aria-label="Facebook Profile">
+                                        <i class="fab fa-facebook-f" aria-hidden="true"></i> Facebook
+                                    </a>
+                                    <a href="https://wa.me/201558556588" target="_blank" rel="noopener noreferrer" class="social-pill whatsapp" title="Chat on WhatsApp" aria-label="WhatsApp Direct Message">
+                                        <i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp
+                                    </a>
+                                </div>
+                            </div>
                         </div>
+                    </div>
 
+                    <!-- Column 2: Interactive Project Inquiry Form -->
+                    <div class="col-lg-7">
+                        <div class="contact-form-card h-100">
+                            <h4>Send a Project Inquiry</h4>
+                            <p class="form-desc">Fill out the form below to send an instant inquiry via WhatsApp or Email.</p>
+
+                            <form id="contactForm" onsubmit="return false;">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="clientName" class="form-label">Your Name / Organization <span class="text-danger">*</span></label>
+                                        <div class="input-group">
+                                            <span class="input-group-text"><i class="fas fa-user" aria-hidden="true"></i></span>
+                                            <input type="text" class="form-control" id="clientName" placeholder="e.g. Eng. Ahmed / Contracting Co." required autocomplete="name">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="clientContact" class="form-label">Phone / WhatsApp <span class="text-danger">*</span></label>
+                                        <div class="input-group">
+                                            <span class="input-group-text"><i class="fas fa-phone" aria-hidden="true"></i></span>
+                                            <input type="tel" class="form-control" id="clientContact" placeholder="e.g. +20 100 ... / Email" required autocomplete="tel">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="serviceType" class="form-label">Service of Interest</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text"><i class="fas fa-hard-hat" aria-hidden="true"></i></span>
+                                            <select class="form-select" id="serviceType" aria-label="Select engineering service">
+                                                <option value="Site Supervision & Execution" selected>Site Supervision & Execution</option>
+                                                <option value="Roads & Infrastructure Paving">Roads & Infrastructure Paving</option>
+                                                <option value="Reinforced Concrete & Structural">Reinforced Concrete & Structural</option>
+                                                <option value="Interior & Exterior Finishing">Interior & Exterior Finishing</option>
+                                                <option value="Primavera Planning & BOQ Surveying">Primavera Planning & BOQ Surveying</option>
+                                                <option value="Full-Time Civil Engineer Recruitment">Full-Time Civil Engineer Recruitment</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="projectLocation" class="form-label">Project Location</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text"><i class="fas fa-map-pin" aria-hidden="true"></i></span>
+                                            <input type="text" class="form-control" id="projectLocation" placeholder="e.g. New Cairo, Mansoura, 6th of October">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="projectMessage" class="form-label">Project Details & Specifications <span class="text-danger">*</span></label>
+                                        <textarea class="form-control" id="projectMessage" rows="4" placeholder="Briefly describe the project scope, required start date, and engineering requirements..." required></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="d-flex flex-wrap gap-3 mt-2">
+                                            <button type="button" class="btn btn-submit-whatsapp flex-grow-1" id="btnSendWhatsApp" aria-label="Send project inquiry via WhatsApp">
+                                                <i class="fab fa-whatsapp me-2" aria-hidden="true"></i> Send via WhatsApp
+                                            </button>
+                                            <button type="button" class="btn btn-submit-email flex-grow-1" id="btnSendEmail" aria-label="Send project inquiry via Email">
+                                                <i class="fas fa-paper-plane me-2" aria-hidden="true"></i> Send via Email
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="formAlert" class="alert alert-success mt-3 d-none" role="alert" aria-live="polite"></div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!------------------- end contact -------------------->
+        </section>
+        <!-------------------- End Contact Section -------------------->
 
-    <!------------------- start footer -------------------->
+    </main>
+    <!-- End Semantic Main Content Wrapper -->
+
+    <!-------------------- Footer -------------------->
     <footer>
         <div class="container">
-            <div class="footer-content py-4 d-flex justify-content-between align-items-center flex-wrap">
-                <span>All Rights reserved © 2024 Mohamed Hegazy</span>
-                <span>Crafted with <i class="fas fa-heart"></i> using modern web technologies</span>
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <span class="brand-name-footer">Eng. Mohamed Adel Nabih</span>
+                    <p>Civil Site & Execution Engineer with 5+ years of proven field expertise across Egypt's national infrastructure and premium residential projects.</p>
+                </div>
+                <div class="footer-links">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="#home"><i class="fas fa-chevron-right" aria-hidden="true"></i> Home</a></li>
+                        <li><a href="#about"><i class="fas fa-chevron-right" aria-hidden="true"></i> About</a></li>
+                        <li><a href="#expertiseArea"><i class="fas fa-chevron-right" aria-hidden="true"></i> Services</a></li>
+                        <li><a href="#portfolio"><i class="fas fa-chevron-right" aria-hidden="true"></i> Projects</a></li>
+                        <li><a href="#timeline"><i class="fas fa-chevron-right" aria-hidden="true"></i> Timeline</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right" aria-hidden="true"></i> Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h5>Connect</h5>
+                    <div class="footer-social-icons">
+                        <a href="https://www.linkedin.com/in/mohalabxy81/" target="_blank" rel="noopener noreferrer" class="footer-social-icon linkedin" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.facebook.com/mohamedadel.nabih" target="_blank" rel="noopener noreferrer" class="footer-social-icon facebook" aria-label="Facebook">
+                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://wa.me/201558556588" target="_blank" rel="noopener noreferrer" class="footer-social-icon whatsapp" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                        </a>
+                        <a href="mailto:mohalab_xy81@yahoo.com" class="footer-social-icon email" aria-label="Email">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>All Rights Reserved © <span id="currentYear">2026</span> | Eng. Mohamed Adel Nabih</p>
+                <span class="footer-badge">
+                    <i class="fas fa-hard-hat" aria-hidden="true"></i> Building Egypt's Future
+                </span>
             </div>
         </div>
     </footer>
-    <!------------------- end footer -------------------->
+    <!-------------------- End Footer -------------------->
 
+    <!-------------------- Project Details Modal -------------------->
+    <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content custom-modal-content">
+                <div class="modal-header border-bottom border-secondary">
+                    <div>
+                        <span class="badge category-badge mb-1" id="modalCategory">Category</span>
+                        <h4 class="modal-title text-white" id="projectModalLabel">Project Title</h4>
+                        <p class="modal-arabic mb-0 text-info" id="modalArabic"></p>
+                    </div>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close project specifications modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-org-box p-3 rounded-3 mb-3">
+                        <i class="fas fa-award text-info me-2" aria-hidden="true"></i>
+                        <span class="text-white fw-bold" id="modalOrg">Organization</span>
+                    </div>
+                    <h6 class="text-info text-uppercase fw-bold mb-2">Scope of Work & Engineering Role:</h6>
+                    <p class="text-muted" id="modalDesc">Detailed description of the project and execution milestones.</p>
+                    
+                    <h6 class="text-info text-uppercase fw-bold mb-2 mt-4">Key Engineering Highlights:</h6>
+                    <ul class="modal-highlights text-muted" id="modalHighlights">
+                        <!-- Populated by JS -->
+                    </ul>
+                </div>
+                <div class="modal-footer border-top border-secondary">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="#contact" class="btn btn-info text-dark fw-bold" data-bs-dismiss="modal">Inquire for Similar Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------- End Project Modal -------------------->
 
-    <!-- jquery script -->
+    <!-------------------- CV Modal -------------------->
+    <div class="modal fade" id="cvModal" tabindex="-1" aria-labelledby="cvModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content custom-modal-content">
+                <div class="modal-header border-bottom border-secondary">
+                    <h4 class="modal-title text-white" id="cvModalLabel"><i class="fas fa-file-alt text-info me-2" aria-hidden="true"></i>Curriculum Vitae (CV)</h4>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close CV modal"></button>
+                </div>
+                <div class="modal-body text-center py-4">
+                    <div class="cv-avatar mb-3">
+                        <img src="./assets/images/about-photo.webp" alt="Eng. Mohamed Adel Nabih" class="rounded-circle border border-info border-3" width="90" height="90" style="object-fit: cover;">
+                    </div>
+                    <h5 class="text-white">Eng. Mohamed Adel Nabih</h5>
+                    <p class="text-info mb-1">Civil Site & Execution Engineer</p>
+                    <p class="text-muted small">5+ Years Experience | Roads, Structural Concrete & Finishing | Egypt</p>
+                    
+                    <div class="cv-quick-stats p-3 rounded-3 my-3 text-start">
+                        <div class="d-flex justify-content-between py-1 border-bottom border-secondary">
+                            <span class="text-muted">Degree:</span>
+                            <span class="text-white">B.Sc. Civil Engineering (2019)</span>
+                        </div>
+                        <div class="d-flex justify-content-between py-1 border-bottom border-secondary">
+                            <span class="text-muted">Highway Project:</span>
+                            <span class="text-white fw-bold text-success">Grade Excellent (امتياز)</span>
+                        </div>
+                        <div class="d-flex justify-content-between py-1 border-bottom border-secondary">
+                            <span class="text-muted">Current Role:</span>
+                            <span class="text-white">ArteVo Co.</span>
+                        </div>
+                        <div class="d-flex justify-content-between py-1">
+                            <span class="text-muted">Authority Work:</span>
+                            <span class="text-white">Armed Forces Eng. Authority</span>
+                        </div>
+                    </div>
+
+                    <p class="text-muted small mb-3">Download the official PDF CV directly or request customized formats via WhatsApp or Email.</p>
+
+                    <div class="d-grid gap-2">
+                        <a href="cv.html?download=1" target="_blank" class="btn btn-info py-2 fw-bold text-dark" aria-label="Generate and Download Latest Live PDF CV">
+                            <i class="fas fa-file-download me-2" aria-hidden="true"></i> Generate & Download Live PDF
+                        </a>
+                        <a href="cv.html" target="_blank" class="btn btn-outline-light py-2" aria-label="Open Interactive HTML CV in new tab">
+                            <i class="fas fa-eye me-2" aria-hidden="true"></i> View Interactive CV (cv.html)
+                        </a>
+                        <a href="./assets/Mohamed_Adel_Nabih_CV.pdf" download="Eng_Mohamed_Adel_Nabih_CV.pdf" class="btn btn-outline-secondary py-2 text-white" aria-label="Download Pre-rendered PDF CV">
+                            <i class="fas fa-file-pdf me-2" aria-hidden="true"></i> Direct Static PDF Download
+                        </a>
+                        <a href="https://wa.me/201558556588?text=Hello%20Eng.%20Mohamed%20Adel,%20I%20reviewed%20your%20portfolio%20and%20would%20like%20to%20request%20your%20official%20CV%20and%20credentials." 
+                           target="_blank" rel="noopener noreferrer" class="btn btn-success py-2 fw-bold mt-1" aria-label="Request CV on WhatsApp">
+                            <i class="fab fa-whatsapp me-2" aria-hidden="true"></i> Request on WhatsApp
+                        </a>
+                        <a href="mailto:mohalab_xy81@yahoo.com?subject=CV%20Request%20-%20Eng.%20Mohamed%20Adel%20Nabih&body=Hello%20Eng.%20Mohamed,%0A%0APlease%20provide%20your%20latest%20CV%20for%20a%20potential%20engineering%20role%20/%20project." 
+                           class="btn btn-outline-info py-2" aria-label="Request CV via Email">
+                            <i class="fas fa-envelope me-2" aria-hidden="true"></i> Request via Email
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------- End CV Modal -------------------->
+
+    <!-------------------- Floating Quick Actions -------------------->
+    <!-- WhatsApp Floating Action Button -->
+    <a href="https://wa.me/201558556588" target="_blank" rel="noopener noreferrer" class="floating-whatsapp" aria-label="Chat directly with Eng. Mohamed Adel on WhatsApp" title="Chat with Eng. Mohamed on WhatsApp">
+        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+        <span class="floating-tooltip">Chat on WhatsApp</span>
+    </a>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Scroll back to top of the page" title="Back to Top">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </button>
+    <!-------------------- End Floating Quick Actions -------------------->
+
+    <!-- Copy notification toast -->
+    <div id="copyToast" class="copy-toast" role="status" aria-live="polite">Copied to clipboard!</div>
+
+    <!-- jQuery Script -->
     <script src="JS/jquery-3.6.0.min.js"></script>
-    <!-- slick slider script -->
+    <!-- Slick Slider Script -->
     <script src="JS/slick.min.js"></script>
-    <!-- popper.js script -->
+    <!-- Popper.js Script -->
     <script src="JS/popper.min.js"></script>
-    <!-- bootstrap script -->
+    <!-- Bootstrap Script -->
     <script src="JS/bootstrap.min.js"></script>
-    <!-- typedjs script -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <!-- custom script -->
+    <!-- Typed.js Script -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12" crossorigin="anonymous"></script>
+    <!-- JSON-LD Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Mohamed Adel Nabih",
+        "alternateName": "Mohamed Adel Hegazy",
+        "jobTitle": "Civil Site & Execution Engineer",
+        "description": "Civil Engineer specializing in site execution, supervision, road infrastructure, concrete structures, and architectural finishing in Egypt.",
+        "url": "https://mohalabxy81.github.io/my-portfolio-master/",
+        "image": "./assets/images/about-photo.webp",
+        "email": "mohalab_xy81@yahoo.com",
+        "telephone": "+201558556588",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Minyat Al Nasr",
+            "addressRegion": "Dakahlia",
+            "addressCountry": "EG"
+        },
+        "alumniOf": {
+            "@type": "EducationalOrganization",
+            "name": "Delta University for Science and Technology"
+        },
+        "worksFor": {
+            "@type": "Organization",
+            "name": "ArteVo Co."
+        },
+        "knowsAbout": ["Site Execution", "Roads & Asphalt", "Reinforced Concrete", "Interior Finishing", "AutoCAD", "Revit BIM", "Primavera P6", "Quantity Surveying"],
+        "sameAs": [
+            "https://www.linkedin.com/in/mohalabxy81/",
+            "https://www.facebook.com/mohamedadel.nabih"
+        ]
+    }
+    </script>
+    <!-- Custom Script -->
     <script src="JS/script.js"></script>
+
 </body>
+
 </html>
