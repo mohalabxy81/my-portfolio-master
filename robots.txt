@@ -1,0 +1,7 @@
+# Robots.txt - Eng. Mohamed Adel Nabih Portfolio
+User-agent: *
+Allow: /
+Disallow: /projects/pr1/
+Disallow: /projects/pr2/
+
+Sitemap: https://mohalabxy81.github.io/my-portfolio-master/sitemap.xml
