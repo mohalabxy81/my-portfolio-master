@@ -185,8 +185,11 @@ document.addEventListener('DOMContentLoaded', () => {
             const target = parseInt(counter.getAttribute("data-target"), 10);
             if (isNaN(target)) return;
 
+            const suffix = counter.getAttribute("data-suffix") !== null ? counter.getAttribute("data-suffix") : (target === 100 ? "%" : "+");
+            const unit = counter.getAttribute("data-unit") || "";
+
             let current = 0;
-            const duration = 1500; // ms
+            const duration = 1400; // ms
             const stepTime = 30;
             const steps = duration / stepTime;
             const increment = target / steps;
@@ -197,8 +200,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     current = target;
                     clearInterval(timer);
                 }
-                const suffix = target === 100 ? "%" : "+";
-                counter.textContent = `${Math.floor(current)}${suffix}`;
+                const formattedNumber = Math.floor(current).toLocaleString('en-US');
+                counter.textContent = `${formattedNumber}${suffix}${unit ? ' ' + unit : ''}`;
             }, stepTime);
         });
 
@@ -224,10 +227,10 @@ document.addEventListener('DOMContentLoaded', () => {
     if (typeof Typed !== 'undefined' && document.getElementById('typed')) {
         new Typed('#typed', {
             strings: [
-                "a Civil Site Engineer",
-                "a Roads & Infrastructure Specialist",
-                "a Structural Concrete Supervisor",
-                "a Turnkey Finishing Engineer"
+                "a Civil Site Execution Engineer",
+                "a Structural Site Engineer",
+                "a Technical Office Engineer",
+                "a Quantity Surveying Specialist"
             ],
             typeSpeed: 55,
             backSpeed: 35,
@@ -369,12 +372,12 @@ document.addEventListener('DOMContentLoaded', () => {
             arabic: "إنشاء وتنفيذ مصانع متكاملة - منطقة كوم أوشيم الصناعية، الفيوم",
             category: "Industrial Construction & Structural Engineering",
             org: "ArteVo Co. (شركة أرتيفو)",
-            desc: "Turnkey structural and civil site engineering for full-scale industrial factory facilities in Kom Oshim Industrial Zone, Fayoum. Encompasses heavy foundations, structural frames, heavy-duty industrial flooring, and industrial finishing.",
+            desc: "Turnkey structural and civil site engineering for full-scale industrial factory facilities in Kom Oshim Industrial Zone, Fayoum. Encompasses shallow reinforced concrete foundations, structural concrete frames, heavy-duty industrial flooring, and technical office quantity surveying.",
             highlights: [
-                "Supervised deep and shallow reinforced concrete foundations, structural columns, beams, and pre-engineered steel warehouse frames.",
-                "Executed high-tolerance, heavy-duty power-troweled (helicopter) concrete flooring with quartz surface hardeners and joint sealants.",
-                "Conducted rebar spacing inspections, formwork verticality checks, slump testing, and compressive cube testing per ECP 203 standards.",
-                "Coordinated industrial MEP infrastructure, heavy machinery footings, industrial drainage, and technical quantity surveying."
+                "Supervised reinforced concrete foundations (isolated, combined, and raft), tie beams, structural columns, and slabs per approved shop drawings.",
+                "Executed high-tolerance, heavy-duty power-troweled (helicopter) concrete flooring with quartz surface hardeners and elastomeric joint sealants.",
+                "Conducted rebar spacing inspections, cover block verification, formwork verticality checks, slump testing, and compressive cube testing per ECP 203 / ASTM.",
+                "Performed structural shop drawing reviews, Bar Bending Schedules (BBS), concrete quantity takeoff (حصر الكميات), and contractor coordination."
             ]
         },
         p6: {
@@ -501,7 +504,7 @@ document.addEventListener('DOMContentLoaded', () => {
             `_Sent via Portfolio Webpage_`;
 
         const encodedText = encodeURIComponent(text);
-        const whatsappUrl = `https://wa.me/201558556588?text=${encodedText}`;
+        const whatsappUrl = `https://wa.me/966509598046?text=${encodedText}`;
 
         window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
 

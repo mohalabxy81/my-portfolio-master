@@ -1921,6 +1921,12 @@ footer::before {
   border-color: #25d366;
 }
 
+.footer-social-icon.instagram:hover {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  border-color: #bc1888;
+  color: #fff;
+}
+
 .footer-social-icon.email:hover {
   background: var(--gradient-accent);
   border-color: var(--accent);
